@@ -21,10 +21,11 @@
     position:absolute;
     filter: blur(50px);
     animation: fermeture 1s forwards;
+    border-radius: 50px;
 }
 #eclair
 {
-    border-radius: 250%;
+    border-radius: 50%;
     width: 0vw;
     height: 0vw;
     z-index: 10;
