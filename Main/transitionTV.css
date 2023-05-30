@@ -1,0 +1,86 @@
+#transition
+{
+    display: none;
+}
+#ecran
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 10;
+    left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+    position:absolute;
+}
+#fermeture
+{
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    z-index: 10;
+    left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+    position:absolute;
+    filter: blur(50px);
+    animation: fermeture 1s forwards;
+}
+#eclair
+{
+    border-radius: 250%;
+    width: 0vw;
+    height: 0vw;
+    z-index: 10;
+    left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+    position: absolute;
+    animation: eclair 1s forwards;
+    background-color: white;
+}
+@keyframes fermeture
+{
+    0%
+    {
+        width: 90vw;
+        height: 90vh;
+    }
+    20%
+    {
+        width: 70vw;
+        height: 50vh;
+    }
+    50%
+    {
+        width: 100vw;
+        height: 1.5vh;
+        filter: blur(5px);
+    }
+    85%
+    {
+        width: 5vw;
+        height: 1.5vh;
+        filter: blur(5px);
+    }
+    100%
+    {
+        width: 0;
+        height: 0;
+        filter: blur(0);
+    }
+}
+@keyframes eclair
+{
+    50%
+    {
+        width: 20vw;
+        height: 60vh;
+        filter: blur(20px);
+    }
+    75%
+    {
+        width: 50vw;
+        height: 5vh;
+        filter: blur(10px);
+    }
+    100%
+    {
+        width: 0vw;
+        height: 0vh;
+    }
+}

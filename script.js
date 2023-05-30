@@ -1,32 +1,45 @@
-// document.getElementById("lienY").addEventListener("click", function(event){
-//     event.preventDefault()
-// })
+"use strict";
 
-const lienY = document.getElementById('lienY')
-const coffre1 = document.getElementById('coffre1')
-const coffre2 = document.getElementById('coffre2')
-const p1 = document.querySelector('.p1')
-const p2 = document.querySelector('.p2')
-const frame = document.querySelector('.frame')
-const boule = document.querySelector('.boule')
+const on = document.querySelector('#on')
+const off = document.querySelector('#off')
+const btnOn = document.querySelector('.btnOn')
+const btnOff = document.querySelector('.btnOff')
+const boutons = document.querySelector('#boutons')
+const transition = document.querySelector('#transition')
 
+on.addEventListener("click", ()=>
+{
+        btnOn.classList.toggle("visible")
+        btnOn.classList.toggle("invisible")
+        setTimeout(()=>{
+            btnOff.classList.toggle("invisible")
+            boutons.classList.toggle("invisible")
+            btnOff.classList.toggle("visible")
+            boutons.classList.toggle("visible")
+        }, 1500)
+})
 
-
-// console.log(coffre1)
-
-// lienY.addEventListener("click", (e)=>{
-//     e.preventDefault()
-//     coffre1.style.display = "block"
-//     coffre2.style.display = "block"
-//     coffre1.classList.add("coffre1-active")
-//     coffre2.classList.add("coffre2-active")
-//     setTimeout(function ()
-//     {
-//         p1.style.display = "block"
-//         p2.style.display = "block"
-//         frame.style.display = "block"
-//         boule.style.display = "block"
-//     }, 2000)
-//     setTimeout(function (){document.location.href="http://127.0.0.1:5500/Portfolio/Page/CV/cv.html"}, 5000)
-// })
-
+off.addEventListener("click", ()=>
+{
+    transition.style.display = "block"
+    setTimeout(()=>
+    {
+        btnOn.classList.toggle("visible")
+        btnOn.classList.toggle("invisible")
+    }, 500)
+        btnOff.classList.toggle("invisible")
+        boutons.classList.toggle("invisible")
+        btnOff.classList.toggle("visible")
+        boutons.classList.toggle("visible")
+        setTimeout(()=>
+        {
+            transition.style.opacity = "0"
+            transition.style.transition = "opacity 1s"
+        }, 1500)
+        setTimeout(()=>
+        {
+            transition.style.opacity = ""
+            transition.style.transition = ""
+            transition.style.display = ""
+        }, 2500)
+})

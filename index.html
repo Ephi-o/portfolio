@@ -10,54 +10,40 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Main page/Panel -->
+        <input type="radio" name="on" id="on">
+        <label for="on" class="btnOn visible">PRESS START</label>
+        <input type="radio" name="off" id="off" checked>
+        <label for="off" class="btnOff invisible"><i class="fa-solid fa-power-off" style="color: #191919;"></i></label>
         
-        <input type="radio" name="intro" id="checkbox" class="press">
-        <label for="checkbox" class="press1"><div class="enter">PRESS START</div></label>
-        <input type="radio" name="intro" id="burger" checked>
-        <label for="burger" class="menu"><i class="fa-solid fa-power-off" style="color: #191919;"></i></label>
-        
-        <div class="A" id="btnA">
-            <a href="./Page/Projet/projet.html">
-                <div class="linkSpanner"><h1>Mes projets</h1></div>
-            </a>
-        </div>
+        <article id="boutons" class="invisible">
+            <div class="A" id="btnA">
+                <a href="./Page/Projet/projet.html">
+                    <div class="linkSpanner"><h1>Mes projets</h1></div>
+                </a>
+            </div>
 
-        <div class="Y" id="btnY">
-            <a href="./Page/CV/cv.html" id="lienY">
-                <div class="linkSpanner" class="lienY2"><h1>Mon CV</h1></div>
-            </a>
-        </div>
+            <div class="Y" id="btnY">
+                <a href="./Page/CV/cv.html" id="lienY">
+                    <div class="linkSpanner" class="lienY2"><h1>Mon CV</h1></div>
+                </a>
+            </div>
 
-        <div class="B" id="btnB">
-            <a href="./Page/Github/git.html">
-                <div class="linkSpanner"><h1>Github</h1></div>
-            </a>
-        </div>
+            <div class="B" id="btnB">
+                <a href="./Page/Github/git.html">
+                    <div class="linkSpanner"><h1>Github</h1></div>
+                </a>
+            </div>
 
-        <div class="X" id="btnX">
-            <a href="./Page/Contact/contact.html">
-                <div class="linkSpanner"><h1>Contact</h1></div>
-            </a>
-        </div>
-    <!--Transition-->
-        <article>
-            <div id="coffre1"></div>
-            <div id="coffre2"></div>
-            <div class="boule"></div>
-        <article class="p1">
-            <div class="portal1" id="portal"></div>
-            <div class="portal11" id="portal"></div>
-            <div class="portal2"></div>
-            <div class="portal22"></div>
+            <div class="X" id="btnX">
+                <a href="./Page/Contact/contact.html">
+                    <div class="linkSpanner"><h1>Contact</h1></div>
+                </a>
+            </div>
         </article>
-        <article class="p2" id="articleportal">
-            <div class="portal1" id="portal"></div>
-            <div class="portal11" id="portal"></div>
-            <div class="portal2"></div>
-            <div class="portal22"></div>
-        </article>
-    <div class="frame"></div>
+        <article id="transition">
+            <div id="ecran"></div>
+            <div id="fermeture"></div>
+            <div id="eclair"></div>
         </article>
 </body>
 </html>
