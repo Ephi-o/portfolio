@@ -26,7 +26,7 @@ off.addEventListener("click", ()=>
     {
         btnOn.classList.toggle("visible")
         btnOn.classList.toggle("invisible")
-    }, 500)
+    }, 2000)
         btnOff.classList.toggle("invisible")
         boutons.classList.toggle("invisible")
         btnOff.classList.toggle("visible")

@@ -4,84 +4,65 @@
 }
 #ecran
 {
+    width: 0vw;
+    height: 0vh;
+    background-color: white;
+    border-radius: 15%;
+    filter: blur(2px);
+    z-index: 11;
+    left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+    position:absolute;
+    animation: light .5s .3s forwards;
+}
+#fermeture
+{
     width: 100vw;
     height: 100vh;
     background-color: black;
     z-index: 10;
-    left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+    left : 0 ; top: -200vh ; bottom: 0 ; right: 0 ; margin: auto;
     position:absolute;
-}
-#fermeture
-{
-    width: 90vw;
-    height: 90vh;
-    background-color: white;
-    z-index: 10;
-    left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
-    position:absolute;
-    filter: blur(50px);
-    animation: fermeture 1s forwards;
-    border-radius: 50px;
+    animation: down .3s forwards;
 }
 #eclair
 {
-    border-radius: 50%;
-    width: 0vw;
-    height: 0vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
     z-index: 10;
-    left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
-    position: absolute;
-    animation: eclair 1s forwards;
-    background-color: white;
+    left : 0 ; top: 150vh ; bottom: 0 ; right: 0 ; margin: auto;
+    position:absolute;
+    animation: up .3s forwards;
 }
-@keyframes fermeture
+
+@keyframes up
 {
-    0%
+    0% {top: 150vh;}
+    100%
     {
-        width: 90vw;
-        height: 90vh;
+        transform: translateY(-50vh);
     }
-    20%
+}
+@keyframes down
+{
+    0% {top: -200vh;}
+    100%
     {
-        width: 70vw;
-        height: 50vh;
+        transform: translateY(51vh);
     }
-    50%
+}
+@keyframes light
+{
+    0% 
     {
         width: 100vw;
-        height: 1.5vh;
-        filter: blur(5px);
-    }
-    85%
-    {
-        width: 5vw;
-        height: 1.5vh;
-        filter: blur(5px);
+        height: 2vh;
     }
     100%
     {
         width: 0;
         height: 0;
-        filter: blur(0);
+        opacity: 0;
     }
-}
-@keyframes eclair
-{
-    50%
-    {
-        width: 20vw;
-        height: 60vh;
-        filter: blur(20px);
-    }
-    75%
-    {
-        width: 50vw;
-        height: 5vh;
-        filter: blur(10px);
-    }
-    100%
-    {
-        width: 0vw;
-        height: 0vh;
-    }
+
 }
