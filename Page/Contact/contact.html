@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- <link rel="stylesheet" href="./loading.js"> -->
+    <link rel="stylesheet" href="contact.css">
+    <script src="script.js" defer></script>
+</head>
+<body>        
+    <input type="checkbox" name="intro" id="burger">
+    <label for="burger" class="menu">‎</label>
+    <span class="emoji"></span>
+    <span class="cross"></span><span class="cross2"></span>
+    <menu>
+        <ul>
+            <li><a href="../../index.html">Accueil</a></li>
+            <li><a href="../../Page/Projet/projet.html">Projets</a></li>
+            <li><a href="../../Page/Github/git.html">Github</a></li>
+            <li><a href="../../Page/Contact/contact.html">Contact</a></li>
+        </ul>
+    </menu>
+    <article id="contactform">
+        <div id="contact">
+        </div>
+        <form action="" method="get">
+            <div id="form">
+                <input type="text" name="" id="name" placeholder="Nom" required>
+                <input type="text" name="" id="firstname" placeholder="Prénom" required>
+                <input type="email" name="" id="mail" placeholder="johndoe@mail.fake" required>
+                <select id="selection" required>
+                    <option value="nada" selected disabled>Autre type de coordonnées</option>
+                    <option value="tel">Téléphone</option>
+                    <option value="linkedin">Linkedin</option>
+                    <option value="discord">Discord</option>
+                    <option value="other">Autre...</option>
+                    <option value="nada">Rien</option>
+                </select>
+                <input type="text" name="" id="coordonnate" placeholder="Coordonnées" required>
+                <select name="" id="reason" required>
+                    <option value="" selected disabled>Raison du contact...</option>
+                    <option value="">Demande d'information</option>
+                    <option value="">Besoin d'aide</option>
+                    <option value="">Proposition emploi</option>
+                    <option value="other">Autre...</option>
+                </select>
+                <textarea name="content" id="message" cols="30" rows="5" placeholder="Votre message..." required></textarea>
+            <!-- <input type="submit" value="" name="send" id="send"> -->
+            <button type="submit" id="send">Envoyer</button>
+            <canvas id="canvas-form"></canvas>
+        </div>
+        </form>
+    </article>
+</body>
+</html>

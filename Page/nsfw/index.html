@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>    
+    <input type="checkbox" name="hand" id="hand" type="radio" onchange="myfunction(this)">
+    <label for="hand" class="button"><p>Take my hand</p></label>
+    <audio controls preload loop hidden>
+        <source src="../RessourcesImport/TITEUF REMIX (MEGATEUF).mp3" />
+    </audio>    
+    <img src="../RessourcesImport/burg.gif" alt="" id="burg">
+    <img src="../RessourcesImport/burg.gif" alt="" id="burg1">
+    <!-- <img src="../RessourcesImport/burg3.gif" alt="" id="burg3" loading="eager">
+    <img src="../RessourcesImport/burg3.gif" alt="" id="burg4" loading="eager">
+    <img src="../RessourcesImport/burg3.gif" alt="" id="burg5" loading="eager"> -->
+    <script>
+
+    var audio = new Audio('../RessourcesImport/TITEUF REMIX (MEGATEUF).mp3');
+
+       audio.oncanplay = function() 
+       {
+       if (document.getElementById("hand").checked) this.play()
+       }
+       function myfunction(el) 
+       {    
+         if (el.checked) {
+           audio.load();
+         }
+       }
+    
+    if (document.getElementById("burg").onload)
+    {
+        document.getElementsByClassName("button").style.display = "none"
+    }
+
+    </script>
+    <div class="cercle6"></div>
+    <div class="cercle5"></div>
+    <div class="cercle4"></div>
+    <div class="cercle3"></div>
+    <div class="cercle2"></div>
+    <div class="cercle1"></div>
+    <div class="bloc1"></div>
+    <div class="bloc2"></div>
+</body>
+</html>
