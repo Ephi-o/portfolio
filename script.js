@@ -7,6 +7,18 @@ const btnOff = document.querySelector('.btnOff')
 const boutons = document.querySelector('#boutons')
 const transition = document.querySelector('#transition')
 
+document.addEventListener("keydown", ()=>
+{
+    btnOn.classList.toggle("visible")
+    btnOn.classList.toggle("invisible")
+    setTimeout(()=>{
+        btnOff.classList.toggle("invisible")
+        boutons.classList.toggle("invisible")
+        btnOff.classList.toggle("visible")
+        boutons.classList.toggle("visible")
+    }, 1500)
+})
+
 on.addEventListener("click", ()=>
 {
         btnOn.classList.toggle("visible")
