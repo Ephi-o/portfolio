@@ -17,6 +17,7 @@
         frame.addEventListener('click', radio)
         // call.addEventListener('click', radio)
         
+
 //TODO - DQM / Hobby
 let i = -1
 const hobby = document.querySelector('.cv > .color2')
@@ -28,29 +29,38 @@ document.addEventListener("keydown", (event) =>{
         hobby.style.visibility = "visible"
         if (nomTouche === 'Escape')
         hobby.style.visibility = "hidden"
+        avant[0].style.visibility = "hidden"
+        avant[1].style.visibility = "hidden"
+        avant[2].style.visibility = "hidden"
+        avant[3].style.visibility = "hidden"
 })
 
 document.addEventListener("keydown", (event) =>{
         const nomTouche = event.key;
         if (nomTouche === 'Enter')
         i = 0
-},)
-
+})
+        
+        
 document.addEventListener("keydown", (event) =>{
         const nomTouche = event.key;
-        if (nomTouche === 'ArrowRight' && i <3 )
-        i++
-        if (nomTouche === 'ArrowDown' && i <2)
-        i +=2
-        if (nomTouche === 'ArrowUp' && i> 1)
-        i -=2
-        if (nomTouche === 'ArrowLeft' && i> 0)
-        i--
-        if (nomTouche === 'Escape')
-        i = -1
-        avant[0].style.visibility = "hidden"
-        avant[1].style.visibility = "hidden"
-        avant[2].style.visibility = "hidden"
-        avant[3].style.visibility = "hidden"
-        avant[i].style.visibility = "visible"
-}, false)
+        if(hobby.style.visibility == "visible")
+        {
+                if (nomTouche === 'ArrowRight' && i <3 )
+                i++
+                if (nomTouche === 'ArrowDown' && i <2)
+                i +=2
+                if (nomTouche === 'ArrowUp' && i> 1)
+                i -=2
+                if (nomTouche === 'ArrowLeft' && i> 0)
+                i--
+                if (nomTouche === 'Escape')
+                i = -1
+                avant[0].style.visibility = "hidden"
+                avant[1].style.visibility = "hidden"
+                avant[2].style.visibility = "hidden"
+                avant[3].style.visibility = "hidden"
+                avant[i].style.visibility = "visible"
+        }
+        })
+

@@ -250,13 +250,14 @@ li
     content: url(../../RessourcesImport/eye.gif);
     left: -15px;
 }
+
 /*TODO - Maîtrise / HADES */
 
 .maitrises
 {
     font-family: Hades;;
-    width: 65vw;
-    height: 30vh;
+    width: 120vmin;
+    height: 30vmin;
     background-color: rgb(60, 57, 48);
     background-image: url(../../RessourcesImport/hades_dialogue_box_template_by_theemonkeyprince_de7kq9q-fullview.png);
     background-repeat: no-repeat;
@@ -268,23 +269,27 @@ li
     transition: 2s;
     cursor: url(../../RessourcesImport/CursorDefault.cur), default;
     filter: drop-shadow(5px 5px 5px black);
+    border-image: url(../../RessourcesImport/Content_border.png);
+    border-image-slice: 81 103 81 103;
+    border-image-width: 5vmin 5vmin 5vmin 5vmin;
+    border-image-outset: 2vmin 2.5vmin 1vmin 4vmin;
+    border-image-repeat: round round;
 }
-.maitrises::before
+/* .maitrises::before
 {
     position: absolute;
-    width: calc(65vw + 60px);
-    height: calc(28.5vh + 23px);
+    width: 127vmin;
+    height: 31.5vmin;
     transform: translate(-35px, -10px);
     content: "";
-    border: 1px solid transparent;
     border-image: url(../../RessourcesImport/Content_border.png);
-    border-image-width: 80px 59px;
+    border-image-width: 80px 60px;
     border-image-slice: 37% 25%;
     border-image-repeat: round;
     pointer-events: none;
-    z-index: 2;    
+    z-index: 12;    
     transition: 2s;
-}
+} */
 .maitrises li
 {
     top: -30px;

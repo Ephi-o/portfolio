@@ -193,7 +193,7 @@ li::before
     left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
     position: absolute;
 }
-#contact, #form
+#form
 {
     width: 50vw;
     height: 100vh;
@@ -289,4 +289,24 @@ li::before
     background-color: #00000000;
     pointer-events: none;
     z-index: 1;
+}
+
+/*--------------------------------------------------Contact----------------------------------------------------------------*/
+#contact
+{
+    width: 41.5vw;
+    /* background-color: red; */
+    left : 0 ; top: 0 ; bottom: 0 ; margin: auto;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 20vw 20vw;
+    grid-template-rows: 20vh 20vh;
+    padding-top: 25vh;
+    padding-left: 3vw;
+}
+.fa-linkedin-in, .fa-discord, .fa-twitter, .fa-github
+{
+    filter: drop-shadow(0px 10px 5px black);
 }

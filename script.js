@@ -1,48 +1,66 @@
 "use strict";
 
+//!SECTION - Enter/Escape main page
+
 const on = document.querySelector('#on')
 const off = document.querySelector('#off')
 const btnOn = document.querySelector('.btnOn')
 const btnOff = document.querySelector('.btnOff')
 const boutons = document.querySelector('#boutons')
 const transition = document.querySelector('#transition')
+const aide = document.querySelector('#aide')
+document.body.style.cursor = "none"
+document.addEventListener("mousemove", indic);
 
-document.addEventListener("keydown", ()=>
+document.addEventListener("keydown", (event)=>
 {
-    btnOn.classList.toggle("visible")
-    btnOn.classList.toggle("invisible")
-    setTimeout(()=>{
-        btnOff.classList.toggle("invisible")
-        boutons.classList.toggle("invisible")
-        btnOff.classList.toggle("visible")
-        boutons.classList.toggle("visible")
-    }, 1500)
+    const nomTouche = event.key;
+    if (nomTouche === 'Enter' || nomTouche === 'Space' || nomTouche == " ")
+    {
+        docOn()
+    }
+    else if(nomTouche === 'Escape')
+    {
+        docOff()
+    }
 })
 
 on.addEventListener("click", ()=>
 {
-        btnOn.classList.toggle("visible")
-        btnOn.classList.toggle("invisible")
-        setTimeout(()=>{
-            btnOff.classList.toggle("invisible")
-            boutons.classList.toggle("invisible")
-            btnOff.classList.toggle("visible")
-            boutons.classList.toggle("visible")
-        }, 1500)
+    docOn()
 })
 
 off.addEventListener("click", ()=>
 {
+    docOff()
+})
+
+function docOn()
+{
+    aide.setAttribute("src", "./RessourcesImport/Button2.png")
+    btnOn.classList.remove("visible")
+    btnOn.classList.add("invisible")
+    setTimeout(()=>{
+        btnOff.classList.remove("invisible")
+        boutons.classList.remove("invisible")
+        btnOff.classList.add("visible")
+        boutons.classList.add("visible")
+    }, 1500)
+}
+
+function docOff()
+{
+    aide.setAttribute("src", "./RessourcesImport/Button.png")
     transition.style.display = "block"
     setTimeout(()=>
     {
-        btnOn.classList.toggle("visible")
-        btnOn.classList.toggle("invisible")
+        btnOn.classList.add("visible")
+        btnOn.classList.remove("invisible")
     }, 2000)
-        btnOff.classList.toggle("invisible")
-        boutons.classList.toggle("invisible")
-        btnOff.classList.toggle("visible")
-        boutons.classList.toggle("visible")
+        btnOff.classList.add("invisible")
+        boutons.classList.add("invisible")
+        btnOff.classList.remove("visible")
+        boutons.classList.remove("visible")
         setTimeout(()=>
         {
             transition.style.opacity = "0"
@@ -54,4 +72,67 @@ off.addEventListener("click", ()=>
             transition.style.transition = ""
             transition.style.display = ""
         }, 2500)
+        radio()
+}
+
+function indic(e)
+{
+    var CurX = e.clientX + 10
+    var CurY = e.clientY + 10
+    aide.style.position = "absolute"
+    aide.style.left = `${CurX}`+"px"
+    aide.style.top = `${CurY}`+"px"
+}
+
+//!SECTION2 - Hover via touches
+
+
+const btnY = document.querySelector('#btnY')
+const btnA = document.querySelector('#btnA')
+const btnB = document.querySelector('#btnB')
+const btnX = document.querySelector('#btnX')
+
+document.addEventListener("keydown", (event)=>
+{
+    const nomTouche = event.key;
+    console.log(event.key)
+    if(btnOn.classList == "btnOn invisible")
+    {
+        switch(nomTouche)
+        {
+            case 'ArrowUp':
+                btnY.classList.add("arrowselected")
+                btnX.classList.remove("arrowselected")
+                btnB.classList.remove("arrowselected")
+                btnA.classList.remove("arrowselected")
+                break
+            case 'ArrowDown':
+                btnY.classList.remove("arrowselected")
+                btnX.classList.remove("arrowselected")
+                btnB.classList.remove("arrowselected")
+                btnA.classList.add("arrowselected")
+                break
+            case 'ArrowLeft':
+                btnY.classList.remove("arrowselected")
+                btnX.classList.add("arrowselected")
+                btnB.classList.remove("arrowselected")
+                btnA.classList.remove("arrowselected")
+                break
+            case 'ArrowRight':
+                btnY.classList.remove("arrowselected")
+                btnX.classList.remove("arrowselected")
+                btnB.classList.add("arrowselected")
+                btnA.classList.remove("arrowselected")
+                break
+        }
+    }
 })
+    
+//!SECTION - Sound effect
+
+var audio = new Audio('./RessourcesImport/Tv off - Sound effects.mp3');
+
+function radio()
+{       
+        audio.play()       
+}

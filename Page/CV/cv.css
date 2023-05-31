@@ -1,4 +1,5 @@
-@import url(../RessourcesImport/menu.css);
+@import url(../../RessourcesImport/menu.css);
+
 li::before
 {
     content: "";
@@ -51,7 +52,7 @@ li
 {
     width: auto;
     height: 35vh;
-    background: url(../RessourcesImport/artworks-000420504324-qbn3os-t500x500.jpg);
+    background: url(/RessourcesImport/artworks-000420504324-qbn3os-t500x500.jpg);
     box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(0, 0, 0, 0.5);
     background-position: -150px 20px;
     grid-row: 1;
@@ -168,7 +169,7 @@ nav li
 nav li::before
 {
     position: relative;
-    content: url(../RessourcesImport/ON-icon-zonestory-assisted.png);
+    content: url(/RessourcesImport/ON-icon-zonestory-assisted.png);
     top: 5px;
 }
 
