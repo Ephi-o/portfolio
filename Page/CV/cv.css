@@ -2,7 +2,7 @@
 @import url(../../Main/default.css);
 @import url(../../RessourcesImport/Polices/polices.css);
 
-/*P1 ------------------------------------ Link CV2 / Speech bubble ------------------------------------ */
+/*P/ ------------------------------------ Link CV2 / Speech bubble ------------------------------------ */
 input
 {
     visibility: hidden;
@@ -71,31 +71,29 @@ input
     opacity: 1;
     cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), auto;
 }
-
-/*P2 ------------------------------------ CV / DIV ------------------------------------ */
+/*P// ------------------------------------ CV / DIV ------------------------------------ */
 .cv
 {
     display: grid;
     position: absolute;
-    grid-template-rows: 17.5vmin 17.5vmin 12.5vmin 37.5vmin;
-    grid-template-columns: 35vmin 120vmin;
-    margin-left: 30vmin;
+    grid-template-rows: 17.5vh 17.5vh 12.5vh 37.5vh;
+    grid-template-columns: 20vw 60vw;
+    margin-left: 17.5vw;
     margin-top: 5vmin;
-    row-gap: 2vh;   
-    column-gap: 2vw;
-    top: -1vh;
-    width: 159vmin;
+    row-gap: 2vmin;   
+    column-gap: 2vmin;
+    top: -1vmin;
+    width: 148.5vmin;
     height: 91vmin;
-    background-color: rgba(255, 0, 0, 0.3);
+    /* background-color: rgba(255, 0, 0, 0.3); */
 }
 #photo
 {
     width: auto;
-    height: 35vmin;
     background: url(../../RessourcesImport/Images/artworks-000420504324-qbn3os-t500x500.jpg);
     box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(0, 0, 0, 0.5);
     background-position: -150px 20px;
-    grid-row: 1;
+    grid-row: 1 / span 2;
     grid-column: 1;
     
 }
@@ -104,15 +102,13 @@ input
     grid-row: 1;
     grid-column: 2;
     background-color: #131313;
-    height: 15vmin;
 }
 #experiences
 {
     grid-row: 2;
     grid-column: 2;
     background-color: #131313;
-    height: 15vmin;
-    top: 15vmin;
+    top: 17.5vh;
 }
 #shortcut_contact
 {
@@ -129,6 +125,17 @@ input
     grid-column: 2;
     background-color: #131313;
 }
+#infos
+{
+    width: 20vw;
+    height: 45vh;
+    background-color: #ffe4c4;
+    position: relative;
+    top: 3.5vh;
+    left: 2vw;
+    border-radius: 2vmin;
+    opacity: 0;
+}
 #Apropos
 {
     grid-row: 4;
@@ -136,7 +143,7 @@ input
     background-color: #131313;
 }
 
-/*P3 ------------------------------------ DIV / P / LI ------------------------------------ */
+/*P/// ------------------------------------ DIV / P / LI ------------------------------------ */
 
 #contact_p
 {
@@ -144,6 +151,7 @@ input
     text-transform: uppercase;
     font-family: Alegreya;
     letter-spacing: .5vmin;
+    color: #ffe4c4;
 }
 #diplomes li
 {
@@ -151,6 +159,7 @@ input
     font-family: Alegreya;
     list-style: none;
     margin: 2vmin 7vmin;
+    color: #ffe4c4;
 }
 #experiences li
 {
@@ -158,6 +167,7 @@ input
     font-family: Alegreya;
     list-style: none;
     margin: 5vmin 7vmin;
+    color: #ffe4c4;
 }
 #maitrises img
 {
@@ -170,9 +180,10 @@ input
     font-family: Alegreya;
     list-style: none;
     margin: 2vmin 7vmin;
+    color: #ffe4c4;
 }
 
-/*P1 ------------------------------------ Animation logo ------------------------------------ */
+/*P/ ------------------------------------ Animation logo ------------------------------------ */
 
 #logo_container
 {
@@ -183,18 +194,20 @@ input
     display: flex;
     justify-content: center;
     align-items: center;
-    left : 0 ; top: 1vmin ; bottom: 0 ; right: 0 ; margin: auto;
+    left : 0 ; top: -43.5vh ; bottom: 0 ; right: 0 ; margin: auto;
     position: relative;
+    z-index: 2;
 }
 #logo_
 {
-    
-    width: 5vmin;
+    width: fit-content;
+    height: fit-content;
     border-radius: 50%;
     aspect-ratio: 1/1;
     left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
     position: absolute;
     animation: logo reverse 60s infinite linear;
+    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), auto;
 }
 
 @keyframes logo

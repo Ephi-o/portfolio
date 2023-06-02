@@ -9,7 +9,7 @@ const coordonnate = document.querySelector('#coordonnate')
 const selection = document.querySelector('#selection')
 
 
-// P1 ------------------------------------ Ajout div pour raison/selection ------------------------------------
+// P/ ------------------------------------ Ajout div pour raison/selection ------------------------------------
 reason.addEventListener("change", ()=>
 {
     if(reason.value == "other")
@@ -45,7 +45,7 @@ const name_ = document.querySelector('#name')
 const firstname = document.querySelector('#firstname')
 const mail = document.querySelector('#mail')
 
-// P2 ------------------------------------ Vérification régex ------------------------------------
+// P// ------------------------------------ Vérification régex ------------------------------------
 name_.addEventListener("change", verifname)
 firstname.addEventListener("change", verifname)
 mail.addEventListener("change", verifMail)
@@ -112,7 +112,7 @@ function verifCoordonnate()
     }
 }
 
-//P3 ------------------------------------ Animation Canvas ------------------------------------
+//P/// ------------------------------------ Animation Canvas ------------------------------------
 
 const canvas = document.getElementById('canvas-form')
 const ctx = canvas.getContext('2d')

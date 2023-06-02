@@ -1,6 +1,6 @@
 "use strict";
 
-//!SECTION - Enter/Escape main page
+//P/ - Enter/Escape main page
 
 const on = document.querySelector('#on')
 const off = document.querySelector('#off')
@@ -84,7 +84,7 @@ function indic(e)
     aide.style.top = `${CurY}`+"px"
 }
 
-//!SECTION2 - Hover via touches
+//P// - Hover via touches
 
 
 const btnY = document.querySelector('#btnY')
@@ -128,7 +128,7 @@ document.addEventListener("keydown", (event)=>
     }
 })
     
-//!SECTION - Sound effect
+//P/// - Sound effect
 
 var audio = new Audio('./RessourcesImport/Sons/Tv off - Sound effects.mp3');
 
