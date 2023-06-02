@@ -1,6 +1,6 @@
 @font-face {
     font-family: DQM;
-    src: url("../RessourcesImport/dragon-quest-ds.ttf");
+    src: url("../RessourcesImport/Polices/dragon-quest-ds.ttf");
 }
 
 /* ---------------------------------------------Bouton power-------------------------------------------------- */
@@ -67,7 +67,6 @@
     transform: scale(0);
     transition: 1.5s;
 }
-
 #aide
 {
     width: 200px;

@@ -1,191 +1,8 @@
-@font-face {
-    font-family: Hades;
-    src: url(../RessourcesImport/AlegreyaSans-ExtraBold.ttf);
-}
+@import url(../../RessourcesImport/menu/menu.css);
+@import url(../../Main/default.css);
+@import url(../../RessourcesImport/Polices/polices.css);
 
-body
-{
-    background-color: #2b2a33;
-    ;
-    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam372.cur), default;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    
-}
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-a:focus {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
-    text-decoration: none;
-    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), default;
-}
-
-a:active {
-    color: black;
-    text-decoration: none;
-}
-/*---------------------------------------------Cliquable burger---------------------------------------------------------------------*/
-.menu
-{
-    background-color: rgba(0, 0, 0, 0);
-    top: 25px;
-    width: 40px;
-    height: 50px;
-    position: absolute;    
-    z-index: 1;
-    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), default;
-}
-.emoji
-{
-    background-color: rgb(0, 0, 0);
-    top: 50px;
-    width: 40px;
-    height: 5px;
-    position: absolute;
-    z-index: 0;
-    transition: 2s;
-    border-radius: 20px;
-}
-.emoji::before
-{
-position: absolute;
-content: '';
-width: inherit;
-height: inherit;
-background:inherit ;
-top:-15px;
-border-radius: 20px;
-}
-.emoji::after
-{
-position: absolute;
-content: '';
-width: inherit;
-height: inherit;
-background:inherit ;
-top:15px;
-border-radius: 20px;
-}
-#burger
-{
-    visibility: hidden;
-}
-
-/*-----------------------------------------------Menu burger--------------------------------------------------------------------------*/
-menu
-{
-    position: absolute;
-    font-size: 20px;
-    left: -20vw;
-    top: -20px;
-    list-style: none;
-    width: 15vw;
-    opacity: 0;
-    height: 110vh;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition-duration: 2s;
-    z-index: 5;
-}
-li
-{
-    position: relative;
-    top: 100px;
-    left: -50px;
-    /* list-style-image: url(../ON-icon-zonestory-assisted.png); */
-    list-style: none;
-    margin-top: 10px;
-    text-transform: uppercase;
-    padding-top: 5vh;
-    
-}
-li::before
-{
-    position: relative;
-    content: url(../RessourcesImport/ON-icon-zonestory-assisted.png);
-    top: 5px;
-}
-#burger:checked ~ menu
-{
-    visibility: visible;
-    opacity: 1;
-    transition-duration: 2s;
-    transform: translate(20vw);
-}
-/*------------------------------------------------Animation------------------------------------------------------------------------*/
-.cross
-{
-    background-color: rgb(0, 0, 0);
-    top: 50px;
-    width: 40px;
-    height: 5px;
-    position: absolute;
-    z-index: 0;
-    rotate: 45deg;
-    visibility: hidden;
-    transition: 2s;
-    opacity: 0;
-    border-radius: 20px;
-}
-.cross2
-{
-    background-color: rgb(0, 0, 0);
-    top: 50px;
-    width: 40px;
-    height: 5px;
-    position: absolute;
-    z-index: 0;
-    rotate: -45deg;
-    visibility: hidden;
-    transition: 2s;    
-    opacity: 0;
-    border-radius: 20px;
-}
-#burger:checked ~ .cross
-{
-    transform: scale(1);
-    transform: rotate(720deg);
-    visibility: visible;
-    transition: 3s;
-    opacity: 1;
-}
-#burger:checked ~ .cross2
-{
-    transform: scale(1);
-    transform: rotate(720deg);
-    visibility: visible;
-    opacity: 1;
-    transition: 3s;
-}
-#burger:checked ~ .emoji
-{
-    transform: rotate(720deg);
-    opacity: 0;
-    animation-duration: 2s;
-}
-#burger:checked ~ .prjt
-{    
-    transform: scale(0.8);    
-    margin-left: 20vw;    
-    margin-top: 0vh;    
-    row-gap: 15vh;
-    transition: 2s;
-}
-
-/*--------------------------------------------------Form----------------------------------------------------------------*/
+/*P1 --------------------------------------------------Form----------------------------------------------------------------*/
 #contactform
 {
     width: 100vw;
@@ -197,17 +14,12 @@ li::before
 {
     width: 50vw;
     height: 100vh;
-    /* background-color: hotpink; */
-    left : 0 ; top: 0 ; bottom: 0 ; margin: auto;
+    right : 0; top: 0 ; bottom: 0 ; margin: auto;
     position: absolute;
-}
-#form
-{
     background-color: #131313a2;
-    left: 50vw;
     display: grid;
     padding-left: 3.25vw;
-    padding-top: 35vh;
+    padding-top: 25vh;
     grid-template-columns: repeat(4, 10vw);
     grid-template-rows: repeat(8, 5vh);
     row-gap: 2.5vh;
@@ -282,7 +94,6 @@ li::before
 {
     scale: 0.95;
 }
-
 #form canvas
 {
     position: absolute;
@@ -291,7 +102,7 @@ li::before
     z-index: 1;
 }
 
-/*--------------------------------------------------Contact----------------------------------------------------------------*/
+/*P2 --------------------------------------------------Link Contact----------------------------------------------------------------*/
 #contact
 {
     width: 41.5vw;
@@ -306,7 +117,7 @@ li::before
     padding-top: 25vh;
     padding-left: 3vw;
 }
-.fa-linkedin-in, .fa-discord, .fa-twitter, .fa-github
+#contact i
 {
     filter: drop-shadow(0px 10px 5px black);
 }

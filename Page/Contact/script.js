@@ -8,6 +8,8 @@ raison.setAttribute("placeholder", "Raison...")
 const coordonnate = document.querySelector('#coordonnate')
 const selection = document.querySelector('#selection')
 
+
+// P1 ------------------------------------ Ajout div pour raison/selection ------------------------------------
 reason.addEventListener("change", ()=>
 {
     if(reason.value == "other")
@@ -43,6 +45,7 @@ const name_ = document.querySelector('#name')
 const firstname = document.querySelector('#firstname')
 const mail = document.querySelector('#mail')
 
+// P2 ------------------------------------ Vérification régex ------------------------------------
 name_.addEventListener("change", verifname)
 firstname.addEventListener("change", verifname)
 mail.addEventListener("change", verifMail)
@@ -108,6 +111,8 @@ function verifCoordonnate()
         coordonnate.style.backgroundColor = "rgba(255, 0, 0, 1)"
     }
 }
+
+//P3 ------------------------------------ Animation Canvas ------------------------------------
 
 const canvas = document.getElementById('canvas-form')
 const ctx = canvas.getContext('2d')

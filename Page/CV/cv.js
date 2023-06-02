@@ -1,44 +1,21 @@
 "use strict";
 
-const button = document.querySelector('#button')
-const cv = document.querySelector('#cv')
-const home = document.querySelector('#home')
-const contact = document.querySelector('#contact')
-const projects = document.querySelector('#projects')
-const git = document.querySelector('#git')
-const awesome = document.querySelector('.awesome')
-var x = 0
+const speech_bubble = document.querySelector('#speech_bubble')
+const logo_ = document.querySelectorAll('#logo_')
 
-button.addEventListener("click", ()=>
+speech_bubble.addEventListener("click", ()=>
 {
-    x++
-    awesome.classList.toggle("pushed")
-    awesome.classList.remove("unpushed")
-    if(x == 2)
-    {
-        awesome.classList.add("unpushed")
-        x = 0
-    }
-    awesome.classList.toggle("fa-bars")
-    awesome.classList.toggle("fa-xmark")
-    if(cv)
-    {
-        cv.classList.toggle("menu_selected")
-    }
-    if(home)
-    {
-    home.classList.toggle("menu_selected")
-    }
-    if(contact)
-    {
-    contact.classList.toggle("menu_selected")
-    }
-    if(projects)
-    {
-        projects.classList.toggle("menu_selected")
-    }
-    if(git)
-    {
-        git.classList.toggle("menu_selected")
-    }
+    speech_bubble.style.display = "none"
 })
+
+console.log(logo_)
+
+for(let i = 0; i < logo_.length ; i++)
+{
+    var X = i * 36
+    logo_[i].style.top = `calc(cos(${X}deg) * -40vmin`;
+    logo_[i].style.left = `calc(sin(${X}deg) * -40vmin`;
+    console.log(logo_[i])
+    console.log(i)
+    console.log(X)
+}

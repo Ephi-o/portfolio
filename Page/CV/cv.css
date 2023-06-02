@@ -1,358 +1,206 @@
-@import url(../../RessourcesImport/menu.css);
+@import url(../../RessourcesImport/menu/menu.css);
+@import url(../../Main/default.css);
+@import url(../../RessourcesImport/Polices/polices.css);
 
-li::before
+/*P1 ------------------------------------ Link CV2 / Speech bubble ------------------------------------ */
+input
+{
+    visibility: hidden;
+}
+#sword
+{
+    left : 1vmin; top: 2vmin ; margin: auto;
+    z-index: 15;
+    position: absolute;
+    width: 5vmin;
+    height: 5vmin;
+}
+#speech_bubble
+{
+    left : 4vmin ; top: 14vmin ; margin: auto;
+    position: absolute;
+    width: 15vmin;
+    height: 7vmin;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Alegreya;
+    letter-spacing: .3vmin;
+    font-size: 2vmin;
+    background-color: antiquewhite;
+    border-radius: 2vmin;
+    box-shadow: 1vmin 1vmin #131313;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    transition: opacity 1s;
+}
+#speech_bubble::after
 {
     content: "";
+    width: 8vmin;
+    height: 2vmin;
+    background-color: antiquewhite;
+    box-shadow: 1vmin 1vmin #131313;
+    border-radius: 2vmin;
+    left: 0;
+    top: -3vmin;
+    position: absolute;
+    margin-bottom: 50vmin;
+    font-size: 10vmin;
+    color: antiquewhite;;
 }
-li
+#speech_bubble::before
 {
-    position: relative;
-    top: 0px;
-    left: -0px;
-    /* list-style-image: url(../ON-icon-zonestory-assisted.png); */
-    list-style: disc;
-    margin-top: 0px;
-    text-transform: uppercase;
-    padding-top: .5vh;
-    
+    content: "";
+    width: 3vmin;
+    height: 2vmin;
+    background-color: antiquewhite;
+    box-shadow: 1vmin 1vmin #131313;
+    border-radius: 2vmin;
+    left: 0;
+    top: -6vmin;
+    position: absolute;
+    margin-bottom: 50vmin;
+    font-size: 10vmin;
+    color: antiquewhite;;
 }
-#burger:checked ~ .cv
+#speech_bubble:hover
 {
-        display: grid;
-        flex-wrap: wrap;
-        position: relative;
-        grid-template-rows: 30vh 15vh 15vh 30vh;
-        grid-template-columns: 20vw 57vw;
-        margin-left: 17vw;
-        margin-right: 5vw;
-        margin-top: 0vh;
-        row-gap: 2vh;   
-        column-gap: 2vw;        
-        transition: 2s;
+    opacity: 1;
+    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), auto;
 }
+
+/*P2 ------------------------------------ CV / DIV ------------------------------------ */
 .cv
 {
     display: grid;
-    flex-wrap: wrap;
-    position: relative;
-    grid-template-rows: 30vh 15vh 15vh 30vh;
-    grid-template-columns: 20vw 65vw;
-    margin-left: 10vw;
-    margin-right: 5vw;
-    margin-top: 0vh;
+    position: absolute;
+    grid-template-rows: 17.5vmin 17.5vmin 12.5vmin 37.5vmin;
+    grid-template-columns: 35vmin 120vmin;
+    margin-left: 30vmin;
+    margin-top: 5vmin;
     row-gap: 2vh;   
     column-gap: 2vw;
-    transition: 2s;
     top: -1vh;
+    width: 159vmin;
+    height: 91vmin;
+    background-color: rgba(255, 0, 0, 0.3);
 }
-
-/* ------------------------------------------------------------------------------------------- */
-
-.photo
+#photo
 {
     width: auto;
-    height: 35vh;
-    background: url(/RessourcesImport/artworks-000420504324-qbn3os-t500x500.jpg);
+    height: 35vmin;
+    background: url(../../RessourcesImport/Images/artworks-000420504324-qbn3os-t500x500.jpg);
     box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(0, 0, 0, 0.5);
     background-position: -150px 20px;
     grid-row: 1;
     grid-column: 1;
     
 }
-.exp
+#diplomes
 {
-    width: auto;
-    height: auto;
-    background-color: #D7CEC7;
-    border: 5px inset #C09F80;
-    box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(0, 0, 0, 0.5);
-    grid-row: span 2;
-    grid-column: 2;
-}
-.dplome
-{
-    width: auto;
-    height: auto;
     grid-row: 1;
     grid-column: 2;
-    background-color: #D7CEC7;
-    box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(0, 0, 0, 0.5);
-    border: 5px inset #76323f;
+    background-color: #131313;
+    height: 15vmin;
 }
-.hobby
+#experiences
 {
-    width: auto;
-    height: auto;
-    background-color: #D7CEC7;
-    box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(0, 0, 0, 0.5);
-    border: 5px inset #323776;    grid-row: span 2;
-    grid-column: 1;
-}
-.maitrises
-{
-    width: auto;
-    height: auto;
-    background-color: #D7CEC7;
-    box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(0, 0, 0, 0.5);
-    border: 5px inset #565656;    grid-row: 4;
-    grid-column: 2;
-}
-.hobby li
-{
-    width:inherit;
-}
-.contact
-{
-    position: relative;
-    top: 5vh;
-    width: auto;
-    height: 7vh;
-    background-color: #D7CEC7;
-    box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(0, 0, 0, 0.5);
-    border: 5px inset #32765a;
     grid-row: 2;
-    grid-column: 1/2;
-    text-align: center;
-    text-transform: uppercase;
+    grid-column: 2;
+    background-color: #131313;
+    height: 15vmin;
+    top: 15vmin;
 }
-.contact h1
+#shortcut_contact
 {
-    padding-top: 0;
-    font-size: 2.5vh;
-}
-h3
-{
-    padding-left: 15px;
-}
-.cv li
-{
-    padding-top: 4vh;
-    width: inherit;
-}
-.hobbyul li
-{
-    font-size: 1.25vh;
-    padding-top: 0;
-    left: -2vw;
-}
-/* ------------------------------------------------------------------------------------------- */
-#sword
-{
-    visibility: hidden;
-}
-.sword
-{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 30px;
-    top: 80px;    
-    transition: 2s;
-}
-#burger:checked ~ .sword
-{
-    top: 90vh;
-    transition: 2s;
-}
-nav li
-{
-    position: relative;
-    top: 100px;
-    left: -50px;
-    /* list-style-image: url(../ON-icon-zonestory-assisted.png); */
-    list-style: none;
-    margin-top: 10px;
-    text-transform: uppercase;
-    padding-top: 5vh;
-    
-}
-nav li::before
-{
-    position: relative;
-    content: url(/RessourcesImport/ON-icon-zonestory-assisted.png);
-    top: 5px;
-}
-
-/* ------------------------------------------------------------------------------------------- */
-#burger:checked ~ .info
-{
-    top: 88vh;
-    left: 5vw;
-    transition: 2s;
-    clip-path: polygon(0 40%, 43% 50%, 100% 50%, 100% 100%, 0 100%, 0 50%, 18% 50%);
-}
-.info
-{
-    clip-path: polygon(37% 18%, 60% 50%, 100% 50%, 100% 100%, 0 100%, 0 50%, 45% 50%);
-    width: 9.5vw;
-    height: 12vh;
-    background: white;
-    position: absolute;
-    top: 14vh;
-    opacity: 0.05;
-    transition: opacity 3s 2s, clip-path 2s, top 2s, left 2s;
-}
-.info:hover
-{
-    opacity: 1;
-    transition: opacity 2s 0s;
-}
-.info p:hover
-{
-    opacity: 1;
-    transition-duration: 2s;
-}
-.info p
-{
-    display: block;
-    position: relative;
-    text-align: center;
-    top: 4vh;
-}
-#close
-{
-    visibility: hidden;
-}
-#close:checked ~ .info
-{
-    display: none;
-}
-#close:checked ~ #closeX
-{
-    display: none;
-}
-#closeX
-{
-    position: relative;
-    left: 8.5vw;
-    top: 6vh;
-    z-index: 1;
-}
-#closeX:hover
-{
-    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), default;
-}
-
-/*NOTE - Nouveau menu  */
-
-#bulle1
-{
-    background-color: black;
-    width: 17.5vmin;
-    height: 17.5vmin;
-    border-radius: 50%;
-    left : -13.5vmin ; top: 0 ; bottom: 0 ; margin: auto;
-    position: absolute;
+    grid-row: 3;
+    grid-column: 1;
+    background-color: #131313;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    z-index: 2;
 }
-#bulle1 i
+#maitrises
 {
-    font-size: 3vmin;
-    position: relative;
-    left: -1vmin; top: -.3vmin;
+    grid-row: 3 / span 2;
+    grid-column: 2;
+    background-color: #131313;
 }
-#button
+#Apropos
 {
-    color: white;
+    grid-row: 4;
+    grid-column: 1;
+    background-color: #131313;
+}
+
+/*P3 ------------------------------------ DIV / P / LI ------------------------------------ */
+
+#contact_p
+{
     font-size: 5vmin;
+    text-transform: uppercase;
+    font-family: Alegreya;
+    letter-spacing: .5vmin;
 }
-
-#home, #contact, #projects, #git
-{
-    left : -13.5vmin ; top: 0 ; bottom: 0 ; margin: auto;
-    position: absolute;
-    width: 27vmin;
-    height: 27vmin;
-    border-radius: 50%;
-    transition: transform 1s;
-}
-#home
-{
-    background-color: #333333;
-    clip-path: polygon(100% 0, 75% 0, 50% 0, 50% 50%);
-    display: flex;
-    justify-content: center;
-    align-items: start;
-}
-#contact
-{
-    background-color: rgb(0,116,255);
-    clip-path: polygon(100% 0, 100% 25%, 100% 50%, 50% 50%);
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-#projects
-{
-    background-color: rgb(4,255,0);
-    clip-path: polygon(100% 100%, 100% 75%, 100% 50%, 50% 50%);
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-#git
-{
-    background-color: red;
-    clip-path: polygon(100% 100%, 76% 100%, 50% 100%, 50% 50%);
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-.menu_selected
-{
-    transform: scale(0);
-    transition: transform 1s
-}
-
-#home i
-{
-    left: 3.5vmin; top: 2.5vmin;
-    position: relative;
-}
-#contact i
-{
-    left: -2.25vmin; top: -3.5vmin;
-    position: relative;
-}
-#projects i
-{
-    left: -2.75vmin; top: 3.5vmin;
-    position: relative;
-}
-#git i
-{
-    top: -2vmin; left: 4vmin;
-    position: relative;
-}
-i
+#diplomes li
 {
     font-size: 4vmin;
+    font-family: Alegreya;
+    list-style: none;
+    margin: 2vmin 7vmin;
+}
+#experiences li
+{
+    font-size: 4vmin;
+    font-family: Alegreya;
+    list-style: none;
+    margin: 5vmin 7vmin;
+}
+#maitrises img
+{
+    width: 5vmin;
+    height: 5vmin;
+}
+#Apropos li
+{
+    font-size: 4vmin;
+    font-family: Alegreya;
+    list-style: none;
+    margin: 2vmin 7vmin;
 }
 
-.pushed
+/*P1 ------------------------------------ Animation logo ------------------------------------ */
+
+#logo_container
 {
-    animation: pushed 1s forwards;
+    animation: logo 60s infinite linear;
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left : 0 ; top: 1vmin ; bottom: 0 ; right: 0 ; margin: auto;
+    position: relative;
 }
-.unpushed
+#logo_
 {
-    animation: unpushed 1s forwards;
+    
+    width: 5vmin;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+    position: absolute;
+    animation: logo reverse 60s infinite linear;
 }
 
-@keyframes pushed
+@keyframes logo
 {
     to
     {
-        transform: rotate(720deg);
-    }
-}
-
-@keyframes unpushed
-{
-    to
-    {
-        transform: rotate(-720deg);
+        transform: rotate(720deg)
     }
 }

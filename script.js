@@ -37,7 +37,7 @@ off.addEventListener("click", ()=>
 
 function docOn()
 {
-    aide.setAttribute("src", "./RessourcesImport/Button2.png")
+    aide.setAttribute("src", "./RessourcesImport/Images/Button2.png")
     btnOn.classList.remove("visible")
     btnOn.classList.add("invisible")
     setTimeout(()=>{
@@ -50,7 +50,7 @@ function docOn()
 
 function docOff()
 {
-    aide.setAttribute("src", "./RessourcesImport/Button.png")
+    aide.setAttribute("src", "./RessourcesImport/Images/Button.png")
     transition.style.display = "block"
     setTimeout(()=>
     {
@@ -130,7 +130,7 @@ document.addEventListener("keydown", (event)=>
     
 //!SECTION - Sound effect
 
-var audio = new Audio('./RessourcesImport/Tv off - Sound effects.mp3');
+var audio = new Audio('./RessourcesImport/Sons/Tv off - Sound effects.mp3');
 
 function radio()
 {       

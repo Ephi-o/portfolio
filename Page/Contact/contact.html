@@ -8,28 +8,32 @@
     <!-- <link rel="stylesheet" href="./loading.js"> -->
     <link rel="stylesheet" href="contact.css">
     <script src="script.js" defer></script>
+    <script src="../../RessourcesImport/menu/menu.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>        
-    <input type="checkbox" name="intro" id="burger">
-    <label for="burger" class="menu">‎</label>
-    <span class="emoji"></span>
-    <span class="cross"></span><span class="cross2"></span>
-    <menu>
-        <ul>
-            <li><a href="../../index.html">Accueil</a></li>
-            <li><a href="../../Page/Projet/projet.html">Projets</a></li>
-            <li><a href="../../Page/Github/git.html">Github</a></li>
-            <li><a href="../../Page/Contact/contact.html">Contact</a></li>
-        </ul>
-    </menu>
+<body>   
+
+    <!--P1 ------------------------------------------ Menu ------------------------------------------ -->
+    <article id="side_menu">
+        <div id="bulle1"><span id="button"><i class="awesome fa-solid fa-bars" style="color: #c0c0c0;"></i></span></div>
+        <div id="home_menu" class="menu_selected"><a href="../../index.html"><i class="fa-solid fa-house" style="color: #000000;"></i></a></div>
+        <div id="cv_menu" class="menu_selected"><a href="../CV/cv.html"><i class="fa-solid fa-file-contract" style="color: #000000;"></i></a></div>
+        <div id="contact_menu" class="menu_selected"><a href="../Contact/contact.html"><i class="fa-solid fa-address-book" style="color: #000000;"></i></a></div>
+        <div id="projects_menu" class="menu_selected"><a href="../Projet/projet.html"><i class="fa-solid fa-file-code" style="color: #000000;"></i></a></div>
+        <div id="git_menu" class="menu_selected"><a href="../Github/git.html"><i class="fa-brands fa-github" style="color: #000000;"></i></a></div>
+    </article>
+        
+    <!--P2 ------------------------------------------ Contact ------------------------------------------ -->
+
     <article id="contactform">
+        <!--P1 ------------------------- Link Contact ------------------------- -->
         <div id="contact">
             <i class="fa-brands fa-linkedin-in fa-5x" style="color: #c0c0c0;"></i>
             <i class="fa-brands fa-discord fa-5x" style="color: #c0c0c0;"></i>
             <i class="fa-brands fa-twitter fa-5x" style="color: #c0c0c0;"></i>
             <i class="fa-brands fa-github fa-5x" style="color: #c0c0c0;"></i>
         </div>
+        <!--P2 ------------------------- Fomulaire de Contact ------------------------- -->
         <form action="" method="get">
             <div id="form">
                 <input type="text" name="" id="name" placeholder="Nom" required>

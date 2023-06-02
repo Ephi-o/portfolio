@@ -6,98 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiculum Vitae</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="./loading.js"> -->
     <link rel="stylesheet" href="cv.css">
+    <script src="../../RessourcesImport/menu/menu.js" defer></script>
     <script src="cv.js" defer></script>
+    
 </head>
 <body>
-    <!-- ----------------------------New Menu--------------------------- -->
-
-    <div id="bulle1">
-        <span id="button"><i class="awesome fa-solid fa-bars" style="color: #c0c0c0;"></i></span>
-    </div>
-    <div id="home" class="menu_selected">
-        <a href="../../index.html">
-            <i class="fa-solid fa-house" style="color: #000000;"></i>
-        </a></div>
-    <div id="contact" class="menu_selected">
-        <a href="../Contact/contact.html">
-            <i class="fa-solid fa-address-book" style="color: #000000;"></i>
-        </a></div>
-    <div id="projects" class="menu_selected">
-        <a href="../Projet/projet.html">
-            <i class="fa-solid fa-file-code" style="color: #000000;"></i>
-        </a></div>
-    <div id="git" class="menu_selected">
-        <a href="../Github/git.html">
-            <i class="fa-brands fa-github" style="color: #000000;"></i>
-        </a></div>
     
-    <!-- ----------------------------New Menu--------------------------- -->
-    <input type="checkbox" name="jv" id="sword">
-    <label for="sword" class="sword">
-        <a href="../CV2/cv2.html">‎
-        <img src="/RessourcesImport/65741.png" id="sword1" alt="" width="50px" height="50px">
+    <!--P1 ------------------------------------------ Menu ------------------------------------------ -->
+
+    <article id="side_menu">
+        <div id="bulle1"><span id="button"><i class="awesome fa-solid fa-bars" style="color: #c0c0c0;"></i></span></div>
+        <div id="home_menu" class="menu_selected"><a href="../../index.html"><i class="fa-solid fa-house" style="color: #000000;"></i></a></div>
+        <div id="cv_menu" class="menu_selected"><a href="../CV/cv.html"><i class="fa-solid fa-file-contract" style="color: #000000;"></i></a></div>
+        <div id="contact_menu" class="menu_selected"><a href="../Contact/contact.html"><i class="fa-solid fa-address-book" style="color: #000000;"></i></a></div>
+        <div id="projects_menu" class="menu_selected"><a href="../Projet/projet.html"><i class="fa-solid fa-file-code" style="color: #000000;"></i></a></div>
+        <div id="git_menu" class="menu_selected"><a href="../Github/git.html"><i class="fa-brands fa-github" style="color: #000000;"></i></a></div>
+    </article>
+
+    <!--P2 ------------------------------------------ Link CV2 ------------------------------------------ -->
+    
+        <a href="../CV2/cv2.html" class="sword">
+        <img src="../../RessourcesImport/Images/65741.png" id="sword" alt="">
         </a>
-    </label>
-    <input type="checkbox" name="close" id="close">
-    <div class="info">
-    <label for="close" id="closeX"><i class="fa-solid fa-xmark fa-sm" style="color: #2b2a33">‎</i></label>
-        <p>Une petite touche personnelle ?</p>
+    <div id="speech_bubble">
+        <p>Une autre vision ?</p>
     </div>
-    <!-- ---------------------------------------------------------------- -->
+
+    <!--P3 ------------------------------------------ CV ------------------------------------------ -->
     <article class="cv">
-        
-        <div class="photo"></div>
-        <div class="dplome">
-            <h3>Diplômes</h3>
-            <ul>
-                <li>TP Développeur Web et Web Mobile (En Cours) - Mention présent - AFCI Villeneuve d'Ascq.</li>
-                <li>Baccalauréat Général - Scientifique, spécialisé SVT - Mention Assez Bien - Lycée Polyvalent Val de Lys, Estaires.</li>
-                <li>Brevet des Collèges - Mention Très Bien - Collège Henri Dunant, Merville.</li>
-            </ul>
+        <div id="photo"></div>
+        <div id="shortcut_contact"><a href="../Contact/contact.html"><p id="contact_p">Contact</p></a></div>
+        <div id="diplomes">
+            <li>TP - Développeur Web et Web Mobile - 2023</li>
+            <li>Baccalauréat Général - Scientifique - 2020</li>
         </div>
-        <div class="exp">
-            <h3>Expérience</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Et possimus impedit iusto animi?</li>
-                <li>Qui id ullam asperiores provident!</li>
-            </ul>
+        <div id="experiences">
+            <li>Stage chez X</li>
         </div>
-        <div class="hobby">
-            <h3>Loisirs</h3>
-            <ul>
-                <li>Littérature</li>
-                    <ul class="hobbyul">
-                        <li>Lovecraft / Michael Moorcock / Andrzej Sapkowski</li>
-                    </ul>
-                <li>Sport</li>
-                <ul class="hobbyul">
-                    <li>Taekwondo / Course / Musculation</li>
-                </ul>
-                <li>Jeux Vidéos</li>
-                <ul class="hobbyul">
-                    <li>Saga Elders Scrolls / Hades / Castlevania</li>
-                </ul>
-                <li>Musique</li>
-                <ul class="hobbyul">
-                    <li>Rock / Metal / Funk / Pop / Rap</li>
-                </ul>
-            </ul>
+        <div id="maitrises">
+            <div id="logo_container">
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-html-5.svg" alt=""></div>
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-css3.svg" alt=""></div>
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-sass.svg" alt=""></div>
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-javascript.svg" alt=""></div>
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-jquery.svg" alt=""></div>
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-typescript.svg" alt=""></div>
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-angular.svg" alt=""></div>
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-mysql.svg" alt=""></div>
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-php.svg" alt=""></div>
+                <div id="logo_"><img src="../../RessourcesImport/Images/icon-symfony.svg" alt=""></div>
+                
+            </div>
         </div>
-        <div class="maitrises">
-            <h3>Maîtrises</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Et possimus impedit iusto animi?</li>
-                <li>Qui id ullam asperiores provident!</li>
-            </ul>
-        </div>
-        <div class="contact">
-            <a href="../Contact/contact.html">
-                <h1>Mes coordonnées</h1>
-            </a>
+        <div id="Apropos">
+            <li>"Blabla"</li>
+            <li>"Blabla"</li>
+            <li>"Blabla"</li>
+            <li>"Blabla"</li>
+            <li>"Blabla"</li>
         </div>
     </article>
 </body>
