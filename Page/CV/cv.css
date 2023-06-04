@@ -2,6 +2,7 @@
 @import url(../../Main/default.css);
 @import url(../../RessourcesImport/Polices/polices.css);
 @import url(./cv2.css);
+@import url(../../Main/language.css);
 
 /*P///  Généralisation ------------------------------------ */
 #speech_bubble, #shortcut_contact, #diplomes, #experiences, #Apropos, #infos
@@ -287,6 +288,7 @@ input
     color: white;
     font-size: 5rem;
     font-family: DQ;
+    padding-left: 20vw;
 }
 /*P//  Infos bulle ------------------------------------ */
 

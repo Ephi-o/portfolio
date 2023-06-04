@@ -1,9 +1,6 @@
-@font-face {
-    font-family: DQM;
-    src: url("../RessourcesImport/Polices/dragon-quest-ds.ttf");
-}
+@import url(../RessourcesImport/Polices/polices.css);
 
-/* ---------------------------------------------Bouton power-------------------------------------------------- */
+/*P/ Bouton power-------------------------------------------------- */
 #off, #on
 {
     visibility: hidden;
@@ -18,14 +15,14 @@
     cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), auto;
     z-index: 2;
 }
-/* ---------------------------------------------Enter-------------------------------------------------- */
+/*P// Enter-------------------------------------------------- */
 
 .btnOn
 {
-    font-family: DQM;
+    font-family: DQ;
     font-size: 20vmin;
-    width: 100%;
-    height: 100%;
+    width: max-content;
+    height: max-content;
     position: absolute;
     display: flex;
     text-align: center;
@@ -39,7 +36,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     animation: blink 3s infinite alternate;
-    cursor: none;
+    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), auto;
 }
 @keyframes blink
 {
@@ -53,7 +50,7 @@
     }
 }
 
-/* ---------------------------------------------Animation-------------------------------------------------- */
+/*P/// Animation-------------------------------------------------- */
 
 .visible
 {
@@ -70,4 +67,20 @@
 #aide
 {
     width: 200px;
+    transition : opacity 1s;
+    opacity : 0;
+    left : 0 ; top: 0 ; margin: auto;
+    position: absolute
+}
+#help
+{
+    width: 190px;
+    height: 42.44px;
+    text-align: center;
+    font-family: Alegreya;
+    color:white;
+    transition : opacity 1s;
+    opacity : 0;
+    left : 0 ; top: 0 ; margin: auto;
+    position: absolute
 }

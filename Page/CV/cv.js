@@ -49,10 +49,10 @@ maitrises.addEventListener("click", ()=>
     {
     for(let i = 0; i < logo_.length ; i++)
     {
-        logo_[i].style.filter = ''
-        logo_container.style.left = ''
-        infos.style.opacity = ''
-        logo_container.style.transition = '1s .5s'
+        logo_[i].style.filter = ""
+        logo_container.style.left = ""
+        infos.style.opacity = ""
+        logo_container.style.transition = '1s'
         infos.style.transition = '.5s'    
         setTimeout(()=>
         {
@@ -141,11 +141,19 @@ var on = 0
 sword.addEventListener("click", ()=>
 {
     var random = Math.floor(Math.random()*3)
-    console.log(random)
     if(random == 2)
     {
-        transition1.innerHTML = `<h1>Embauchez</h1>`
-        transition2.innerHTML = `<h1>Moi !</h1>`
+        if(langue = localStorage.getItem("lang") === "en")
+        {
+            transition1.innerHTML = `<h1>Hire</h1>`
+            transition2.innerHTML = `<h1>Me !</h1>`
+        }
+        if(langue = localStorage.getItem("lang") === "fr-FR")
+        {
+            transition1.innerHTML = `<h1>Embauchez</h1>`
+            transition2.innerHTML = `<h1>Moi !</h1>`
+        }
+        
     }
     transition1.style.display = "block"
     transition2.style.display = "block"
@@ -177,7 +185,14 @@ sword.addEventListener("click", ()=>
         infos.style.background = "none"
         photo.innerHTML = "<h1>CALL IN COMING</h1>"
         document.body.style.backgroundImage = `url(../../RessourcesImport/Images/wooden.jpg)`;
-        apropos.innerHTML = "<li>Status</li> <li>Équipements</li> <li>Loisirs</li> <li>Paramètres</li>"
+        if(langue = localStorage.getItem("lang") === "fr-FR")
+        {
+            apropos.innerHTML = "<li>Status</li> <li>Équipements</li> <li>Loisirs</li> <li>Paramètres</li>"
+        }
+        if(langue = localStorage.getItem("lang") === "en")
+        {
+            apropos.innerHTML = "<li>Status</li> <li>Equipments</li> <li>Hobbies</li> <li>Parameters</li>"
+        }
         }
     }, 2000)
     setTimeout(()=>

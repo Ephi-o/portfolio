@@ -1,0 +1,43 @@
+
+/*P/ Languages-------------------------------------------------- */
+
+#language
+{
+    position:absolute;
+    left : .8vw ; bottom: 1.5vh ; margin: auto;
+    border-radius: 2vmin;
+    display: grid;
+    width: 7vmin;
+    border: solid white .5vmin;
+    grid-template-columns: 6vmin 6vmin 6vmin;
+    justify-items: center;
+    align-items: center;
+    scale: 0;
+    z-index: 2;
+}
+.fa-language
+{
+    font-size: 4vmin;
+    grid-column: 1;
+    position:absolute;
+    left : 1.25vw ; bottom: 1.5vh ; margin: auto;
+    z-index: 3;
+}
+.fa-language:hover
+{
+    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), auto;
+}
+.french, .uk
+{
+    width : 5vmin;
+    opacity: 0;
+    z-index: 2;
+}
+.french
+{
+    grid-column: 2;
+}
+.uk
+{
+    grid-column: 3;
+}

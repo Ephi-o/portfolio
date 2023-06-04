@@ -1,0 +1,73 @@
+{
+        "html" : 
+        [
+            "<h1>HTML</h1>",
+            "<li>Le HTML n'a plus de secrets pour moi, une utilisation aisée et rapide.</li>",
+            "<li>Une maîtrise de 9.5/10, car il y a tout de même toujours à apprendre.</li>",
+            "<a href=\"https://html.spec.whatwg.org/multipage/\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-html-5.svg\"></a>"
+        ],
+        "css" : 
+        [
+            "<h1>CSS</h1>",
+            "<li>Le CSS est une facilité, du plus basique des designs au plus complexe.</li>",
+            "<li>Une maîtrise de 9.5/10, il y a toujours de la place à l'apprentissage.</li>",
+            "<a href=\"https://www.w3.org/Style/CSS/\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-css3.svg\"></a>"
+        ],
+        "sass" :
+        [
+            "<h1>SASS</h1>",
+            "<li>Le SASS est une formalité étant lié au CSS, lequel je maîtrise.</li>",
+            "<li>Une maîtrise de 8/10, je suis bien plus habitué à utiliser le CSS \"basique\".</li>",
+            "<a href=\"https://sass-lang.com/\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-sass.svg\"></a>"
+        ],
+        "js" : 
+        [
+            "<h1>JavaScript</h1>",
+            "<li>Le JavaScript est apprit et maîtrisé, aucun problème avec son utilisation.</li>",
+            "<li>Une maîtrise de 9/10.</li>",
+            "<a href=\"https://developer.mozilla.org/fr/docs/Web/JavaScript\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-javascript.svg\"></a>"
+        ],
+        "jquery" : 
+        [
+            "<h1>jQuery</h1>",
+            "<li>Aucun soucis avec jQuery, l'utilisation est maîtrisée.</li>",
+            "<li>Une maîtrise de 8/10, tout comme SASS et CSS, j'utilise plus régulièrement JS sans librairy.</li>",
+            "<a href=\"https://jquery.com/\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-jquery.svg\"></a>"
+        ],
+        "typescript" : 
+        [
+            "<h1>Typescript</h1>",
+            "<li>En cours d'apprentissage...</li>",
+            "<li>En cours d'apprentissage...</li>",
+            "<a href=\"https://html.spec.whatwg.org/multipage/\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-typescript.svg\"></a>"
+        ],
+        "angular" : 
+        [
+            "<h1>Angular</h1>",
+            "<li>En cours d'apprentissage...</li>",
+            "<li>En cours d'apprentissage...</li>",
+            "<a href=\"https://html.spec.whatwg.org/multipage/\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-angular.svg\"></a>"
+        ],
+        "mySql" : 
+        [
+            "<h1>MySQL</h1>",
+            "<li>En cours d'apprentissage...</li>",
+            "<li>En cours d'apprentissage...</li>",
+            "<a href=\"https://html.spec.whatwg.org/multipage/\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-mysql.svg\"></a>"
+        ],
+        "php" : 
+        [
+            "<h1>PHP</h1>",
+            "<li>En cours d'apprentissage...</li>",
+            "<li>En cours d'apprentissage...</li>",
+            "<a href=\"https://html.spec.whatwg.org/multipage/\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-php.svg\"></a>"
+        ],
+        "symfony" : 
+        [
+            "<h1>Symfony</h1>",
+            "<li>En cours d'apprentissage...</li>",
+            "<li>En cours d'apprentissage...</li>",
+            "<a href=\"https://html.spec.whatwg.org/multipage/\" target=\"_blank\"><img src=\"../../RessourcesImport/Images/icon-symfony.svg\"></a>"
+        ]
+}
+

@@ -7,14 +7,19 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="./Main/lang.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
         <input type="radio" name="on" id="on">
-        <label for="on" class="btnOn visible">PRESS START</label>
-        <input type="radio" name="off" id="off" checked>
-        <label for="off" class="btnOff invisible"><i class="fa-solid fa-power-off" style="color: #191919;"></i></label>
-        
+        <span class="btnOn visible">PRESS START</span>
+        <span class="btnOff invisible"><i class="fa-solid fa-power-off" style="color: #191919;"></i></span>
+        <i class="fa-solid fa-language" style="color: #000000;"></i>
+        <div id="language">
+            <img src="./RessourcesImport/Images/french.svg" alt="" class="french">
+            <img src="./RessourcesImport/Images/UK.svg" alt="" class="uk">
+            </span>
+            </div>
         <article id="boutons" class="invisible">
             <div class="A" id="btnA">
                 <a href="./Page/Projet/projet.html">
@@ -45,6 +50,7 @@
             <div id="fermeture"></div>
             <div id="eclair"></div>
         </article>
-        <img src="./RessourcesImport/Images/Button.png" alt="" id="aide">
+        <img src="./RessourcesImport/Images/Button.webp" alt="" id="aide">
+        <p id="help">Appuyez sur 'Entrer', 'Espace' ou 'LeftMouse'.</p>
 </body>
 </html>

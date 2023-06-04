@@ -1,6 +1,7 @@
 @import url(../../RessourcesImport/menu/menu.css);
 @import url(../../Main/default.css);
 @import url(../../RessourcesImport/Polices/polices.css);
+@import url(../../Main/language.css);
 
 *, ::before, ::after{
     padding: 0;
@@ -93,7 +94,7 @@
     overflow: auto;
     padding-right: 0vw;
     border-radius: 2vmin;
-
+    filter: drop-shadow(1vmin 1vmin .5vmin black);
 }
 .emgithub-container
 {
@@ -111,6 +112,7 @@
     row-gap: 1vh;
     color: #FCFCFC;
     font-family: Alegreya;
+    filter: drop-shadow(1vmin 1vmin .5vmin black);
 }
 #git3 h1
 {

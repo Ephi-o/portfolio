@@ -70,6 +70,19 @@ button.addEventListener("click", ()=>
         cv.style.visibility = "visible"
         contact.style.visibility = "visible"
     }
+    if(page == "projet.html")
+    {
+        cv.classList.toggle("menu_selected")
+        contact.classList.toggle("menu_selected")
+        git.classList.toggle("menu_selected")
+        projects.style.display = "none"
+        menuP1(cv)
+        menuP2(contact)
+        menuP3(git)
+        git.style.visibility = "visible"
+        cv.style.visibility = "visible"
+        contact.style.visibility = "visible"
+    }
 })
 
 function menuP1(el)

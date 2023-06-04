@@ -25,6 +25,7 @@
     box-sizing: border-box;
     outline: .5vmin white solid;
     outline-offset: -1.5vmin;
+    padding-top: .5vmin;
 }
 #diplomes.fantasy li::before
 {

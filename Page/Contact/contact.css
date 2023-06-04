@@ -1,6 +1,7 @@
 @import url(../../RessourcesImport/menu/menu.css);
 @import url(../../Main/default.css);
 @import url(../../RessourcesImport/Polices/polices.css);
+@import url(../../Main/language.css);
 
 /*P/ --------------------------------------------------Form----------------------------------------------------------------*/
 #contactform
@@ -27,7 +28,7 @@
 }
 #form *
 {
-    font-family: Hades;
+    font-family: Alegreya;
     font-size: 16px;
     border: none;
     background: #F8F8FF;

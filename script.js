@@ -2,14 +2,13 @@
 
 //P/ - Enter/Escape main page
 
-const on = document.querySelector('#on')
-const off = document.querySelector('#off')
 const btnOn = document.querySelector('.btnOn')
 const btnOff = document.querySelector('.btnOff')
 const boutons = document.querySelector('#boutons')
 const transition = document.querySelector('#transition')
 const aide = document.querySelector('#aide')
-document.body.style.cursor = "none"
+const help = document.querySelector('#help')
+
 document.addEventListener("mousemove", indic);
 
 document.addEventListener("keydown", (event)=>
@@ -25,19 +24,33 @@ document.addEventListener("keydown", (event)=>
     }
 })
 
-on.addEventListener("click", ()=>
+btnOn.addEventListener("click", ()=>
 {
     docOn()
 })
 
-off.addEventListener("click", ()=>
+btnOff.addEventListener("click", ()=>
 {
     docOff()
 })
 
 function docOn()
 {
-    aide.setAttribute("src", "./RessourcesImport/Images/Button2.png")
+    aide.style.opacity = "0"
+    help.style.opacity = "0"
+    setTimeout(()=>
+    {
+        aide.style.opacity = "1"
+        help.style.opacity = "1"
+        if(langue === "fr-FR")
+        {
+            help.innerHTML = "Utilisez votre souris, ou les flèches directionnelles."
+        }
+        if(langue === "en")
+        {
+            help.innerHTML = "Use your mouse or arrows"
+        }
+    }, 4000)
     btnOn.classList.remove("visible")
     btnOn.classList.add("invisible")
     setTimeout(()=>{
@@ -48,9 +61,17 @@ function docOn()
     }, 1000)
 }
 
+
 function docOff()
 {
-    aide.setAttribute("src", "./RessourcesImport/Images/Button.png")
+    if(langue == "fr-FR")
+        {
+            help.innerHTML = "Appuyez sur 'Entrer', 'Espace' ou 'LeftMouse'."
+        }
+    else if(langue == "en")
+        {
+            help.innerHTML = "Push 'Enter', 'Space' or 'LeftMouse'"
+        }
     transition.style.display = "block"
     setTimeout(()=>
     {
@@ -77,15 +98,23 @@ function docOff()
 
 function indic(e)
 {
-    var CurX = e.clientX + 10
-    var CurY = e.clientY + 10
+    var CurX = e.clientX + 15
+    var CurY = e.clientY + 15
     aide.style.position = "absolute"
     aide.style.left = `${CurX}`+"px"
     aide.style.top = `${CurY}`+"px"
+    help.style.position = "absolute"
+    help.style.left = `${CurX+5}`+"px"
+    help.style.top = `${CurY+5}`+"px"
 }
 
-//P// - Hover via touches
+setTimeout(()=>
+{
+    aide.style.opacity = "1"
+    help.style.opacity = "1"
+}, 2000)
 
+//P// - Hover via touches
 
 const btnY = document.querySelector('#btnY')
 const btnA = document.querySelector('#btnA')
@@ -132,15 +161,15 @@ document.addEventListener("keydown", (event)=>
                 {
                     window.location.href = "./Page/CV/cv.html";
                 }
-                if(btnX.classList == "Y arrowselected")
+                if(btnX.classList == "X arrowselected")
                 {
                     window.location.href = "./Page/Contact/contact.html";
                 }
-                if(btnA.classList == "Y arrowselected")
+                if(btnA.classList == "A arrowselected")
                 {
                     window.location.href = "./Page/Projet/projet.html";
                 }
-                if(btnB.classList == "Y arrowselected")
+                if(btnB.classList == "B arrowselected")
                 {
                     window.location.href = "./Page/Github/git.html";
                 }

@@ -1,89 +1,53 @@
-@import url(../RessourcesImport/menu.css);
-/*--------------------------------------------------Cases projets----------------------------------------------------------------*/
-.prjt
+@import url(../../RessourcesImport/menu/menu.css);
+@import url(../../Main/default.css);
+@import url(../../RessourcesImport/Polices/polices.css);
+@import url(../../Main/language.css);
+
+#projectshub
 {
+    width: 90vw;
+    height: 95vh;
+    display: block;
+    position: absolute;
+    left : 5vw ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;    
-    justify-content: space-evenly;
-    row-gap: 5vh;
-    column-gap: 5vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 5vh;    
-    transition: 2s;
+    grid-template-columns: repeat(2, 45vw);
+    grid-template-rows: repeat(2, 47.5vh);
+    align-items: start;
+    justify-items: center;
+    align-items: center;
 }
-.p1, .p2, .p3, .p4, .p5, .p6
+#desc
 {
-    background: red;
-    aspect-ratio: 1/1;
-    /* height: 310px;     */
-    height: 35vh;
-    border: 5px solid white;
-    border-bottom: 40px solid white;
-    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3);
-    transition: 1s;
-    margin-left: 2.5vw;
-}
-.prjt p
-{
-    position: relative;
-    color: rgb(0, 0, 0);
+    position: absolute;
+    left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+    font-size: 5vmin;
     display: flex;
     justify-content: center;
-    align-self: end;
-    top: 34.5vh;
+    align-items: center;
+    text-align: center;
+    font-family: Alegreya;
+    color: #FCFCFC;
+    filter: drop-shadow(1vmin 1vmin 1vmin black);
 }
-.p1{
-    background: url(../../images/ON-cover-Elsweyr.jpg);
-    /* background-size:650px 355px; */    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:50% -5%;
-}
-.p2{
-    background: url(../../images/ON-cover-Morrowind.jpg);
-    /* background-size:600px 305px; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center ;
-}
-.p3{
-    background: url(../../images/ON-cover-Summerset.jpg);
-    /* background-size:600px 305px; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center ;
-}
-.p4{
-    background: url();
-    object-fit: cover;
-}
-.p5{
-    background: url();
-    object-fit: cover;
-}
-.p6{
-    background: url();
-    object-fit: cover;
-}
-.prjt div:hover
+#projectshub div:nth-of-type(n)
 {
-    transform: scale(1.1);
-    transition: 1s;
-    box-shadow: 15px 15px 5px rgb(0, 0, 0);
+    background-color: #FCFCFC;
+    border-radius: 2vmin;
+    border-top-right-radius: 2.5vmin;
+    border-top-left-radius: 2.5vmin;
+    width: 40vw;
+    height: 40vh;
+    text-align: center;
+    font-family: Bethesda;
+    text-decoration: underline;
+    filter: drop-shadow(1vmin 1vmin 1vmin black);
 }
-#screen
+.project1, .project2
 {
-    height: 35vh;
-    aspect-ratio: 1/1;
-}
-/*--------------------------------------------------Animation----------------------------------------------------------------*/
-#burger:checked ~ .prjt
-{    
-    transform: scale(0.9);    
-    margin-left: 16vw;    
-    margin-top: 0vh;    
-    row-gap: 15vh;
-    transition: 2s;
+    width: 100%;
+    height: 90%;
+    border-top-right-radius: 2vmin;
+    border-top-left-radius: 2vmin;
+    pointer-events: none;
 }
