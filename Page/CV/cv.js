@@ -185,7 +185,7 @@ sword.addEventListener("click", ()=>
         infos.style.background = "none"
         photo.innerHTML = "<h1>CALL IN COMING</h1>"
         document.body.style.backgroundImage = `url(../../RessourcesImport/Images/wooden.jpg)`;
-        if(langue = localStorage.getItem("lang") === "fr-FR")
+        if(langue = localStorage.getItem("lang") === "fr-FR" || !localStorage.getItem("lang"))
         {
             apropos.innerHTML = "<li>Status</li> <li>Équipements</li> <li>Loisirs</li> <li>Paramètres</li>"
         }
@@ -262,5 +262,3 @@ document.addEventListener("keydown", (event) =>
     array_continu[z].classList.add("toggled")
 }
 })
-
-console.log(array_continu)

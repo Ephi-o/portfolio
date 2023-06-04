@@ -1,6 +1,5 @@
 "use strict";
 
-console.log(window.navigator.language)
 if(window.navigator.language != "fr")
 {
     if(!localStorage.getItem("lang"))

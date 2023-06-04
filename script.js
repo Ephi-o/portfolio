@@ -124,7 +124,6 @@ const btnX = document.querySelector('#btnX')
 document.addEventListener("keydown", (event)=>
 {
     const nomTouche = event.key;
-    console.log(event.key)
     if(btnOn.classList == "btnOn invisible")
     {
         switch(nomTouche)
