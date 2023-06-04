@@ -45,7 +45,7 @@ function docOn()
         boutons.classList.remove("invisible")
         btnOff.classList.add("visible")
         boutons.classList.add("visible")
-    }, 1500)
+    }, 1000)
 }
 
 function docOff()
@@ -126,7 +126,28 @@ document.addEventListener("keydown", (event)=>
                 break
         }
     }
-})
+    if(nomTouche == 'Enter')
+            {
+                if(btnY.classList == "Y arrowselected")
+                {
+                    window.location.href = "./Page/CV/cv.html";
+                }
+                if(btnX.classList == "Y arrowselected")
+                {
+                    window.location.href = "./Page/Contact/contact.html";
+                }
+                if(btnA.classList == "Y arrowselected")
+                {
+                    window.location.href = "./Page/Projet/projet.html";
+                }
+                if(btnB.classList == "Y arrowselected")
+                {
+                    window.location.href = "./Page/Github/git.html";
+                }
+            }
+        
+    }
+)
     
 //P/// - Sound effect
 
@@ -134,5 +155,6 @@ var audio = new Audio('./RessourcesImport/Sons/Tv off - Sound effects.mp3');
 
 function radio()
 {       
-        audio.play()       
+        setTimeout(()=>
+        {audio.play() }, 300)      
 }

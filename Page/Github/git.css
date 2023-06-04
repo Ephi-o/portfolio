@@ -7,20 +7,118 @@
     margin: 0;
     box-sizing: border-box;
 }
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #d59e07 #ffffff;
+}
+*::-webkit-scrollbar {
+    width: auto;
+}
+*::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #d59e07;
+}
 
 #github
 {
-    background-color: black;
     width: 90vw;
     height: 95vh;
     left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 20vw 30vw 30vw;
     grid-template-rows: 5vh 1fr;
+    column-gap: 2.5vw;
 }
 
-.emgithub-container, .emgithub-file, .emgithub-file-light, .file-data, .hljs-style-default
+/*P/ GIT1 ------------------------------------------------------------*/
+#git1
 {
-    width: 50vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 15vh;
+    width: 20vw;
+    height: 20vh;
+    /* left: 5vw; */
+    filter: drop-shadow(1vmin 1vmin 1vmin black);
+}
+#giticon
+{
+    position: absolute;
+    width: 7vmin;
+    height: 7vmin;
+    top: 15vh;
+    left: 7vw;
+    z-index: 2;    
+}
+#pfp
+{
+    width: 20vh;
+    height:20vh; 
+    display: block;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("../../RessourcesImport/Images/21.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -2vh;
+    background-size: 20vh 23vh;
+    z-index: 1;
+    filter: drop-shadow(1vmin 1vmin .5vmin black);
+}
+#descriptif
+{
+    width: 15vw;
+    height:7.5vh; 
+    background-color: #FCFCFC;
+    border-radius: 2vmin;
+    position: absolute;
+    top: 22.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Alegreya;
+    visibility: hidden;
+}
+/*P// GIT2 ------------------------------------------------------------*/
+
+#git2
+{
+    width: 30vw;
+    height: 95vh;
+    display: flex;
+    overflow: auto;
+    padding-right: 0vw;
+    border-radius: 2vmin;
+
+}
+.emgithub-container
+{
+    position: relative;
+    top: -2vh;
+    border-radius: 2vmin;
+}
+/*P/// GIT3 ------------------------------------------------------------*/
+#git3
+{
+    width: 35vw;
+    height: 95vh;
+    display: grid;
+    grid-template-rows: 5vh repeat(3, 29vh);
+    row-gap: 1vh;
+    color: #FCFCFC;
+    font-family: Alegreya;
+}
+#git3 h1
+{
+    text-align: center;
+}
+#example1, #example2, #example3
+{
+    position: relative;
+    overflow: auto;
+    border-radius: 2vmin;
 }

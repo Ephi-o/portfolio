@@ -207,6 +207,8 @@ photo.addEventListener("click", ()=>
 document.addEventListener("keydown", (event) =>
 {
     const nomTouche = event.key;
+    if(change != 0)
+    {
     switch(nomTouche)
         {
             case 'Enter':
@@ -243,6 +245,7 @@ document.addEventListener("keydown", (event) =>
         array_continu[i].classList.remove("toggled")
     }
     array_continu[z].classList.add("toggled")
+}
 })
 
 console.log(array_continu)

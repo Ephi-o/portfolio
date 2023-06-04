@@ -59,13 +59,13 @@
 {
     visibility: visible;
     transform: scale(1);
-    transition: 1.5s;
+    transition: 1s;
 }
 .invisible
 {
     visibility: hidden;
     transform: scale(0);
-    transition: 1.5s;
+    transition: 1s;
 }
 #aide
 {
