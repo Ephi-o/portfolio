@@ -77,6 +77,8 @@ function menuP1(el)
     el.children[0].children[0].style.left = "-2.5vmin"
     el.children[0].children[0].style.top = "-3.5vmin"
     el.children[0].children[0].style.position = "relative"
+    el.style.justifyContent= "end";
+    el.style.alignItems= "center";
     el.style.clipPath = "polygon(100% 0, 100% 25%, 100% 50%, 50% 50%)";
 }
 function menuP2(el)
@@ -84,6 +86,8 @@ function menuP2(el)
     el.children[0].children[0].style.left = "-2.75vmin"
     el.children[0].children[0].style.top = "3.5vmin"
     el.children[0].children[0].style.position = "relative"
+    el.style.justifyContent= "end";
+    el.style.alignItems= "center";
     el.style.clipPath = "polygon(100% 100%, 100% 75%, 100% 50%, 50% 50%)";
 }
 function menuP3(el)
@@ -91,5 +95,7 @@ function menuP3(el)
     el.children[0].children[0].style.left = "4vmin"
     el.children[0].children[0].style.top = "-2vmin"
     el.children[0].children[0].style.position = "relative"
+    el.style.justifyContent= "center";
+    el.style.alignItems= "end";
     el.style.clipPath = "polygon(100% 100%, 76% 100%, 50% 100%, 50% 50%)";
 }

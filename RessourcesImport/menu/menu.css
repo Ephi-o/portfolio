@@ -7,9 +7,11 @@
 {
     left : -13.5vmin ; top: 0 ; bottom: 0 ; margin: auto;
     position: absolute;
-    z-index: 125;
+    z-index: 1;
     width: 27vmin;
     height: 27vmin;
+    display: flex;
+    align-items: center;
 }
 #bulle1
 {
@@ -37,7 +39,7 @@
 
 #home_menu, #contact_menu, #projects_menu, #git_menu, #cv_menu
 {
-    left : 0 ; top: -9vmin ; bottom: 0 ; margin: auto;
+    /* left : 0 ; top: 0 ; bottom: 0 ; margin: auto; */
     position: absolute;
     width: 27vmin;
     height: 27vmin;

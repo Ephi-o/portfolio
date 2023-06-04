@@ -1,0 +1,123 @@
+#photo.fantasy
+{
+    /* img.innerHTML : CALL IN COMING */
+    text-align : center;
+    justify-content: center;
+    font-family:  MG;
+    background-image : none;
+    cursor : var(--MG);
+    background-color : black;
+    background : repeating-linear-gradient(0deg, rgba(60, 165, 103, 0.6) 0%, rgba(46, 139, 103, 0.6) 5%, rgba(46, 139, 103, 1) 10%, rgba(60, 165, 103, 0.6) 15%);
+    background-position: -150px 20px;
+    border : 5px solid rgb(60, 165, 103);
+}
+#photo.fantasy h1
+{
+    font-size: 5vmin;
+    padding-top: 12.5vmin;
+}
+
+#diplomes.fantasy
+{
+    text-align : center;
+    font-family: Bethesda;
+    background-color : black;
+    box-sizing: border-box;
+    outline: .5vmin white solid;
+    outline-offset: -1.5vmin;
+}
+#diplomes.fantasy li::before
+{
+    content: "";
+    background-image: url(../../RessourcesImport/Images/arrow0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2vmin;
+    height: 2vmin;
+    left: -1vmin;
+    display: inline-block;
+    position: relative;
+}
+
+#experiences.fantasy
+{
+    text-align : center;
+    font-family: Lifecraft;
+    color: black;
+    background: url(../../RessourcesImport/Images/ui-achievement-parchment-horizontal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 95%;
+    border-image: url(../../RessourcesImport/Images/borderwow.png) 20 / 2vmin / .2vmin 0vmin repeat;
+}
+
+#maitrises.fantasy
+{
+    text-align : center;
+    background-color: rgba(0,0,0,0);
+    background-image: url(../../RessourcesImport/Images/hades_dialogue_box_template_by_theemonkeyprince_de7kq9q-fullview.png);
+    background-repeat: no-repeat;
+    background-position: 3.5vmin 1vmin;
+    background-size: 95% 97.5%;
+    box-shadow: none;
+    filter: drop-shadow(1vmin 1vmin 1vmin black);
+    border-image: url(../../RessourcesImport/Images/borderhds1.png);
+    border-image-width: 10vh 5vw;
+    border-image-slice: 37% 30%;
+    border-image-repeat: round;
+}
+
+#shortcut_contact.fantasy
+{
+    text-align : center;
+    background-image: url(../../RessourcesImport/Images/Bouton1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(0,0,0,0);
+    filter: drop-shadow(1vmin 1vmin 1vmin black);
+    box-shadow: none;
+    font-family: Gwent;
+}
+
+#Apropos.fantasy
+{
+    height: 15vh ;
+    border: .6vmin solid hsla(240, 7%, 48%, 1);
+    outline: .5vmin solid white;
+    border-radius: .3vmin;
+    background-color: rgb(57, 66, 74, 0.8);
+    box-shadow: inset .3vmin .3vmin black;
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    grid-template-rows: 1fr 1fr;
+    font-size: 2vmin;
+    font-family: DQ;
+    padding-top: 3vh;
+}
+#Apropos.fantasy::before
+{
+    content: "";
+    background-image: url(../../RessourcesImport/Images/sword.gif);
+    background-repeat: no-repeat;
+    background-size: 3vmin;
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    top: 63.5vh;
+    left: 1.5vw;
+}
+#proposcontinu.fantasy
+{
+    height: 25vh ;
+    width: 30vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 2.5vh;
+}
+.toggled
+{
+    background-image: url(../../RessourcesImport/Images/sword.gif);
+    background-repeat: no-repeat;
+    background-size: 3vmin;
+    background-position: 2vw 1vh;
+}
