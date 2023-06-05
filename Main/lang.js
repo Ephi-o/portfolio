@@ -28,7 +28,12 @@ fa_language.addEventListener("click", ()=>
         languag.children[1].style.visibility = "visible"
     setTimeout(()=>
     {
+        console.log(window.innerWidth)
         languag.style.width = "20vmin"
+        if(window.innerWidth < 1100)
+        {
+            languag.style.width = "30vmax"
+        }
         languag.children[0].style.transition= "opacity 1s 1s"
         languag.children[1].style.transition= "opacity 1s 1s"
         languag.children[0].style.opacity = "1"

@@ -87,7 +87,7 @@ button.addEventListener("click", ()=>
 
 function menuP1(el)
 {
-    el.children[0].children[0].style.left = "-2.5vmin"
+    el.children[0].children[0].style.left = "-2.25vmin"
     el.children[0].children[0].style.top = "-3.5vmin"
     el.children[0].children[0].style.position = "relative"
     el.style.justifyContent= "end";
@@ -96,7 +96,7 @@ function menuP1(el)
 }
 function menuP2(el)
 {
-    el.children[0].children[0].style.left = "-2.75vmin"
+    el.children[0].children[0].style.left = "-3vmin"
     el.children[0].children[0].style.top = "3.5vmin"
     el.children[0].children[0].style.position = "relative"
     el.style.justifyContent= "end";

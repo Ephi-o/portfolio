@@ -51,3 +51,7 @@
     border-top-left-radius: 2vmin;
     pointer-events: none;
 }
+#project3, #project4
+{
+    opacity: .2;
+}

@@ -15,14 +15,15 @@
     cursor: url(https://cur.cursors-4u.net/games/gam-4/gam375.cur), auto;
     z-index: 2;
 }
+
 /*P// Enter-------------------------------------------------- */
 
 .btnOn
 {
     font-family: DQ;
     font-size: 20vmin;
-    width: max-content;
-    height: max-content;
+    width: 75vw;
+    height: 50vh;
     position: absolute;
     display: flex;
     text-align: center;

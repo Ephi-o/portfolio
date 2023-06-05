@@ -49,11 +49,10 @@
     text-align : center;
     font-family: Lifecraft;
     color: black;
-    background: url(../../RessourcesImport/Images/ui-achievement-parchment-horizontal.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 95%;
-    border-image: url(../../RessourcesImport/Images/borderwow.png) 20 / 2vmin / .2vmin 0vmin repeat;
+    background-size: 100% 100%;
+    /* border-image: url(../../RessourcesImport/Images/borderwow.png) 20 / 2vmin / .2vmin 0vmin repeat; */
 }
 #experiences.fantasy li::before
 {
@@ -76,16 +75,10 @@
 {
     text-align : center;
     background-color: rgba(0,0,0,0);
-    background-image: url(../../RessourcesImport/Images/hades_dialogue_box_template_by_theemonkeyprince_de7kq9q-fullview.png);
     background-repeat: no-repeat;
-    background-position: 3.5vmin 1vmin;
-    background-size: 95% 97.5%;
+    background-size: 100% 100%;
     box-shadow: none;
     filter: drop-shadow(1vmin 1vmin 1vmin black);
-    border-image: url(../../RessourcesImport/Images/borderhds1.png);
-    border-image-width: 10vh 5vw;
-    border-image-slice: 37% 30%;
-    border-image-repeat: round;
     cursor: url(../../RessourcesImport/Images/CursorDefault.cur), auto;
 }
 #maitrises.fantasy #logo_container #logo_
@@ -96,7 +89,6 @@
 #shortcut_contact.fantasy
 {
     text-align : center;
-    background-image: url(../../RessourcesImport/Images/Bouton1.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: rgba(0,0,0,0);

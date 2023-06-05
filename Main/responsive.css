@@ -1,0 +1,178 @@
+/* P/ Index */
+
+
+@media screen and (max-width : 1100px)
+{
+    .btnOn
+    {
+        height: 50vh;
+        width: 75vw;
+    }
+    #help, #aide
+    {
+        display: none;
+    }
+}
+@media screen and (max-width : 800px)
+{
+    .A
+    {
+        top: 105vmin
+    }
+    .B
+    {
+        left: 0;
+        top : 35vmin
+    }
+    .X
+    {
+        left: 0;
+        top : -35vmin
+    }
+    .Y
+    {
+        top: -105vmin
+    }
+}
+
+/* P// Langues */
+
+@media screen and (max-width : 1100px)
+{
+    .fa-language, .french, .uk
+    {
+        font-size: 7vmax;
+        width: 7vmax;
+    }
+    #language
+    {
+        height: 7vmax;
+        width: 10vmax;
+        grid-template-columns: 10vmax 10vmax 10vmax;
+    }
+}
+
+/* P/// CV */
+
+@media screen and /*(max-width : 1100px) and*/(orientation: portrait)
+{
+    article.cv
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 45vw);
+        grid-template-rows: 15vh 15vh 10vh 30vh;
+        margin-left: 3.5vw;
+        margin-top: 12.5vh;
+        width: 95vw;
+    }
+    div#infos
+    {
+        width: 40vw;
+        height: 35vh;
+        left: 2.5vw;
+        top: 2.5vh;
+        /* row-gap: 2.5vmin; */
+        /* padding-top: 2vmin; */
+    }
+    div#logo_container
+    {
+        position: absolute;
+        width: 40vw;
+        top: 50vh;
+        left: 43vw;
+        bottom: 0;
+        right: 0;
+    }
+
+    /*P/// CV Fantasy */
+
+    
+    img#sword
+    {
+        width: 7.5vmin;
+        height: 7.5vmin;
+    }
+    div#speech_bubble
+    {
+        left: 15vmin;
+        top: 2.5vmin;
+    }
+    div#speech_bubble::before
+    {
+        left: -5vmin;
+        top: 5vmin;
+        width: 2vmin;
+    }
+    div#speech_bubble::after
+    {
+        left: -2.5vmin;
+        top: 5vmin;
+        height: 2vmin;
+        width: 2vmin;
+    }
+    div#diplomes
+    {
+        font-size: 2.5vmin;
+    }
+    div#transition1 h1, div#transition2 h1
+    {
+        font-size: 5vmin;
+    }
+    div#Apropos.fantasy
+    {
+        grid-template-columns: 20vw 20vw;
+    }
+    div#Apropos.fantasy::before
+    {
+        /* background-color: red; */
+        top: 54.5vh;
+        left: 3vw;
+        position: absolute;
+        display: block;
+    }
+        div#maitrises.fantasy div#logo_container
+    {
+        position: absolute;
+        width: 40vw;
+        top: 0vh;
+        left: 2.5vw;
+        bottom: 0;
+        right: 0;
+    }
+    div#maitrises.fantasy div#infos
+    {
+        width: 40vw;
+        height: 35vh;
+        left: 2.5vw;
+        top: 2.5vh;
+    }
+}
+
+
+
+/* P/ Menu */
+@media screen and (orientation: portrait)
+{
+    article#side_menu
+    {
+        left: 0; right: 0; top: -100vh;
+        rotate: 90deg;
+        scale: 2;
+        box-sizing:border-box;
+    }
+    article#side_menu i
+    {
+        rotate: -90deg;
+    }
+    article#side_menu .fa-house
+    {
+        top: 1vw;
+    }
+    article#side_menu div#projects_menu a i.fa-file-code
+    {
+        /* top: 1vw; */
+        left: -3vw;
+    }
+}
+/* P// */
+/* P/// */

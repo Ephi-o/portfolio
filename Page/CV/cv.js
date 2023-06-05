@@ -19,6 +19,11 @@ for(let i = 0; i < logo_.length ; i++)
     var X = i * 36
     logo_[i].style.top = `calc(cos(${X}deg) * -40vmin`;
     logo_[i].style.left = `calc(sin(${X}deg) * -40vmin`;
+    if(window.matchMedia("(orientation: portrait)").matches === true)
+    {
+        logo_[i].style.top = `calc(cos(${X}deg) * -35vw`;
+        logo_[i].style.left = `calc(sin(${X}deg) * -35vw`;
+    }
     logo_[i].addEventListener("click", ()=>
     {
         x = i
@@ -31,14 +36,17 @@ for(let i = 0; i < logo_.length ; i++)
         }
         logo_container.style.transition = '1s'
         logo_container.style.left = '10vw'
+        if(window.matchMedia("(orientation: portrait)").matches === true)
+        {
+            logo_container.style.left = ''
+            logo_container.style.translate = '0% 40%'
+        }
         infos.style.opacity = '1'
         infos.style.transition = 'opacity 1.5s .5s'
+        infos.style.zIndex= 3;
         fetch(url).then(handleFetch);
         if(change == 1)
-        {
-        infos.style.left = '2.5vw'
         infos.style.background = "none"
-        }
     })
 }
 
@@ -52,6 +60,7 @@ maitrises.addEventListener("click", ()=>
         logo_[i].style.filter = ""
         logo_container.style.left = ""
         infos.style.opacity = ""
+        infos.style.zIndex= "";
         logo_container.style.transition = '1s'
         infos.style.transition = '.5s'    
         setTimeout(()=>
@@ -174,7 +183,7 @@ sword.addEventListener("click", ()=>
         if(change == 0)
         {infos.style.background = ""
         photo.innerHTML = ""
-        document.body.style.backgroundImage = ``
+        document.body.style.backgroundSize = "0%"
         continu.style.display = "none"
         apropos.innerHTML = ""
         sword.style.rotate = ''
@@ -184,7 +193,7 @@ sword.addEventListener("click", ()=>
         sword.style.rotate = '180deg'
         infos.style.background = "none"
         photo.innerHTML = "<h1>CALL IN COMING</h1>"
-        document.body.style.backgroundImage = `url(../../RessourcesImport/Images/wooden.jpg)`;
+        document.body.style.backgroundSize = "100%" 
         if(langue = localStorage.getItem("lang") === "fr-FR" || !localStorage.getItem("lang"))
         {
             apropos.innerHTML = "<li>Status</li> <li>Équipements</li> <li>Loisirs</li> <li>Paramètres</li>"
