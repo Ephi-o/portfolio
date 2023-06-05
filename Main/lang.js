@@ -10,6 +10,7 @@ if(window.navigator.language != "fr")
 
 var langue = localStorage.getItem("lang")
 var path = window.location.pathname;
+console.log(path)
 var page = path.split("/").pop();
 
 const fa_language = document.querySelector('.fa-language')
@@ -66,7 +67,7 @@ languag.children[1].addEventListener("click", ()=>
     }
 })
 
-if(page == "index.html")
+if(page == "index.html" || path == "https://ephi-o.github.io/portfolio/")
 {
     if(langue === "en")
     {
