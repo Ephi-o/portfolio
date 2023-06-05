@@ -49,7 +49,7 @@ function docOn()
         }
         if(langue === "en")
         {
-            help.style.lineHeight = "150%"
+            help.style.lineHeight = "250%"
             help.innerHTML = "Use your mouse or arrows"
         }
     }, 4000)
