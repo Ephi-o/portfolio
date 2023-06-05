@@ -44,10 +44,12 @@ function docOn()
         help.style.opacity = "1"
         if(langue === "fr-FR")
         {
+            help.style.lineHeight = ""
             help.innerHTML = "Utilisez votre souris, ou les flèches directionnelles."
         }
         if(langue === "en")
         {
+            help.style.lineHeight = "150%"
             help.innerHTML = "Use your mouse or arrows"
         }
     }, 4000)
