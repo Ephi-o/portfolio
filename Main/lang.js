@@ -68,7 +68,7 @@ languag.children[1].addEventListener("click", ()=>
 
 if(page == "index.html")
 {
-    if(langue == "en")
+    if(langue === "en")
     {
         btnY.children[0].children[0].children[0].innerHTML = "My CV"
         btnA.children[0].children[0].children[0].innerHTML = "My Projects"
