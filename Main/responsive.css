@@ -182,7 +182,7 @@
     }
     article#side_menu .fa-house
     {
-        top: 2vw;
+        top: 1.8vw;
     }
     article#side_menu div#projects_menu a i.fa-file-code
     {
@@ -191,7 +191,7 @@
     }
     #home_menu, #contact_menu, #projects_menu, #git_menu, #cv_menu
     {
-        left: -.5vh;
+        left: -1vh;
     }
 }
 /* P// */
