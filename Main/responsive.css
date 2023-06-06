@@ -156,7 +156,7 @@
 {
     article#side_menu
     {
-        left: 0; right: 0; top: 0;
+        left: 0; right: 0; top: -100vh;
         rotate: 90deg;
         scale: 2;
         box-sizing:border-box;
@@ -164,6 +164,7 @@
     article#side_menu i
     {
         rotate: -90deg;
+        top: -.5vmin;
     }
     article#side_menu .fa-house
     {
