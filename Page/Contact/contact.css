@@ -28,6 +28,10 @@
     row-gap: 2.5vh;
     column-gap: 1.25vw;
 }
+i
+{
+    font-size: 10vmin;
+}
 #form *
 {
     font-family: Alegreya;
