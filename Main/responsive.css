@@ -134,7 +134,7 @@
     div#Apropos.fantasy::before
     {
         /* background-color: red; */
-        top: 52.5vh;
+        top: 52.75vh;
         left: 3vw;
         position: absolute;
         display: block;
