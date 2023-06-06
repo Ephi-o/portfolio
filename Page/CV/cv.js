@@ -14,16 +14,42 @@ speech_bubble.addEventListener("click", ()=>
     speech_bubble.style.display = "none"
 })
 
+function orient()
+{
+    console.log("YEAH")
+    for(let i = 0; i < logo_.length ; i++)
+    {
+        var X = i * 36
+        console.log(window.matchMedia)
+        if(window.matchMedia("(orientation: landscape)").matches === true)
+        {
+            logo_[i].style.top = `calc(cos(${X}deg) * -40vmin`;
+            logo_[i].style.left = `calc(sin(${X}deg) * -40vmin`;
+        }
+        if(window.matchMedia("(orientation: portrait)").matches === true)
+        {
+            logo_[i].style.top = `calc(cos(${X}deg) * -35vmin`;
+            logo_[i].style.left = `calc(sin(${X}deg) * -35vmin`;
+        }
+    }
+}
+
+if (window.DeviceOrientationEvent)
+    {
+    window.addEventListener('deviceorientation', orient());
+    }
+window.addEventListener('resize', orient());
+
 for(let i = 0; i < logo_.length ; i++)
 {
-    var X = i * 36
-    logo_[i].style.top = `calc(cos(${X}deg) * -40vmin`;
-    logo_[i].style.left = `calc(sin(${X}deg) * -40vmin`;
-    if(window.matchMedia("(orientation: portrait)").matches === true)
-    {
-        logo_[i].style.top = `calc(cos(${X}deg) * -35vw`;
-        logo_[i].style.left = `calc(sin(${X}deg) * -35vw`;
-    }
+    // var X = i * 36
+    // logo_[i].style.top = `calc(cos(${X}deg) * -40vmin`;
+    // logo_[i].style.left = `calc(sin(${X}deg) * -40vmin`;
+    // if(window.matchMedia("(orientation: portrait)").matches === true)
+    // {
+    //     logo_[i].style.top = `calc(cos(${X}deg) * -35vmin`;
+    //     logo_[i].style.left = `calc(sin(${X}deg) * -35vmin`;
+    // }
     logo_[i].addEventListener("click", ()=>
     {
         x = i
@@ -65,9 +91,10 @@ maitrises.addEventListener("click", ()=>
         infos.style.transition = '.5s'    
         setTimeout(()=>
         {
-            logo_container.style.transition = ''
-            infos.style.transition = ''    
-        }, 1000)
+            logo_container.style.transition = '1s'
+            logo_container.style.translate = '0% 0%'
+            infos.style.left = ''
+        }, 500)
     }
 }
 })
