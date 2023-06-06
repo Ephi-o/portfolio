@@ -104,7 +104,7 @@
     }
     div#photo.fantasy
     {
-        background-size: 100% 10%;
+        background-size: 100% 100%;
     }
     div#speech_bubble::before
     {
@@ -133,7 +133,6 @@
     }
     div#Apropos.fantasy::before
     {
-        /* background-color: red; */
         top: 52.75vh;
         left: 3vw;
         position: absolute;
@@ -162,10 +161,6 @@
         top : -16vh;
         left: 2.5vw;
     }
-    div#experiences
-    {
-        background-color: #131313;
-    }
 }
 
 
@@ -190,7 +185,6 @@
     }
     article#side_menu div#projects_menu a i.fa-file-code
     {
-        /* top: 1vw; */
         left: -3vw;
     }
     #home_menu, #contact_menu, #projects_menu, #git_menu, #cv_menu
