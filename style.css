@@ -5,3 +5,9 @@
 @import url(./Main/transitionTV.css);
 @import url(./Main/language.css);
 @import url(./Main/responsive.css);
+
+body
+{
+    height: 100vh;
+    width: 100vw;
+}
