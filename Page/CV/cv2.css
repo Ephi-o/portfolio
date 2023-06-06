@@ -49,10 +49,10 @@
     text-align : center;
     font-family: Lifecraft;
     color: black;
+    background-color : #13131300;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    /* border-image: url(../../RessourcesImport/Images/borderwow.png) 20 / 2vmin / .2vmin 0vmin repeat; */
 }
 #experiences.fantasy li::before
 {

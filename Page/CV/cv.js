@@ -16,11 +16,9 @@ speech_bubble.addEventListener("click", ()=>
 
 function orient()
 {
-    console.log("YEAH")
     for(let i = 0; i < logo_.length ; i++)
     {
         var X = i * 36
-        console.log(window.matchMedia)
         if(window.matchMedia("(orientation: landscape)").matches === true)
         {
             logo_[i].style.top = `calc(cos(${X}deg) * -40vmin`;
@@ -42,38 +40,35 @@ window.addEventListener('resize', orient());
 
 for(let i = 0; i < logo_.length ; i++)
 {
-    // var X = i * 36
-    // logo_[i].style.top = `calc(cos(${X}deg) * -40vmin`;
-    // logo_[i].style.left = `calc(sin(${X}deg) * -40vmin`;
-    // if(window.matchMedia("(orientation: portrait)").matches === true)
-    // {
-    //     logo_[i].style.top = `calc(cos(${X}deg) * -35vmin`;
-    //     logo_[i].style.left = `calc(sin(${X}deg) * -35vmin`;
-    // }
-    logo_[i].addEventListener("click", ()=>
-    {
-        x = i
-        z++
-        z = 0
-        for(let y = 0; y < logo_.length ; y++)
-        {
-            logo_[y].style.filter = 'grayscale(100%)'
-            logo_[i].style.filter = ''
-        }
-        logo_container.style.transition = '1s'
-        logo_container.style.left = '10vw'
-        if(window.matchMedia("(orientation: portrait)").matches === true)
-        {
-            logo_container.style.left = ''
-            logo_container.style.translate = '0% 40%'
-        }
-        infos.style.opacity = '1'
-        infos.style.transition = 'opacity 1.5s .5s'
-        infos.style.zIndex= 3;
-        fetch(url).then(handleFetch);
-        if(change == 1)
-        infos.style.background = "none"
-    })
+        logo_[i].addEventListener("click", ()=>
+            {
+                x = i
+                z++
+                z = 0
+                for(let y = 0; y < logo_.length ; y++)
+                {
+                    logo_[y].style.filter = 'grayscale(100%)'
+                    logo_[i].style.filter = ''
+                }
+                logo_container.style.transition = '1s'
+                logo_container.style.left = '10vw'
+                if(window.matchMedia("(orientation: portrait)").matches === true)
+                {
+                    logo_container.style.left = ''
+                    logo_container.style.translate = '0% 40%'
+                    if(change != 0)
+                    {
+                        logo_container.style.translate = '0% 35%'
+                        console.log(change)
+                    }
+                }
+                infos.style.opacity = '1'
+                infos.style.transition = 'opacity 1.5s .5s'
+                infos.style.zIndex= 3;
+                fetch(url).then(handleFetch);
+                if(change == 1)
+                infos.style.background = "none"
+            })
 }
 
 maitrises.addEventListener("click", ()=>
@@ -173,7 +168,6 @@ var change = 0
 var z = 0
 var on = 0
 
-
 sword.addEventListener("click", ()=>
 {
     var random = Math.floor(Math.random()*3)
@@ -191,6 +185,7 @@ sword.addEventListener("click", ()=>
         }
         
     }
+    logo_container.style.transition = '0s'
     transition1.style.display = "block"
     transition2.style.display = "block"
     sword.style.pointerEvents = "none"
@@ -208,34 +203,37 @@ sword.addEventListener("click", ()=>
         apropos.classList.toggle("fantasy")
         continu.classList.toggle("fantasy")
         if(change == 0)
-        {infos.style.background = ""
-        photo.innerHTML = ""
-        document.body.style.backgroundSize = "0%"
-        continu.style.display = "none"
-        apropos.innerHTML = ""
-        sword.style.rotate = ''
+        {
+            infos.style.background = ""
+            photo.innerHTML = ""
+            document.body.style.backgroundSize = "0%"
+            continu.style.display = "none"
+            apropos.innerHTML = ""
+            sword.style.rotate = ''
+            apropos.innerHTML = "<li>Guéret Killian</li>"
+            apropos.innerHTML += "<p>Développeur Web et Web mobile Junior, à la recherche d'un stage, retrouvez mes maîtrises à ma droite et si vous avez des questions, retrouvez moi dans #Contact.</p>"
         }
         if(change == 1)
         {
-        sword.style.rotate = '180deg'
-        infos.style.background = "none"
-        photo.innerHTML = "<h1>CALL IN COMING</h1>"
-        document.body.style.backgroundSize = "100%" 
-        if(langue = localStorage.getItem("lang") === "fr-FR" || !localStorage.getItem("lang"))
-        {
-            apropos.innerHTML = "<li>Status</li> <li>Équipements</li> <li>Loisirs</li> <li>Paramètres</li>"
-        }
-        if(langue = localStorage.getItem("lang") === "en")
-        {
-            apropos.innerHTML = "<li>Status</li> <li>Equipments</li> <li>Hobbies</li> <li>Parameters</li>"
-        }
-        }
+            sword.style.rotate = '180deg'
+            infos.style.background = "none"
+            photo.innerHTML = "<h1>CALL IN COMING</h1>"
+            document.body.style.backgroundSize = "100%" 
+            if(langue = localStorage.getItem("lang") === "fr-FR" || !localStorage.getItem("lang"))
+                {
+                    apropos.innerHTML = "<li>Status</li> <li>Équipements</li> <li>Loisirs</li> <li>Paramètres</li>"
+                }
+                if(langue = localStorage.getItem("lang") === "en")
+                {
+                    apropos.innerHTML = "<li>Status</li> <li>Equipments</li> <li>Hobbies</li> <li>Parameters</li>"
+                }
+                }
     }, 2000)
     setTimeout(()=>
     {
         transition1.style.display = ""
         transition2.style.display = ""
-    }, 4000)
+    }, 3000)
 })
     
 photo.addEventListener("click", ()=>
@@ -297,4 +295,22 @@ document.addEventListener("keydown", (event) =>
     }
     array_continu[z].classList.add("toggled")
 }
+})
+
+var apropostouch = 0
+
+apropos.addEventListener("click", ()=>
+{
+    if(window.innerWidth < 1100)
+    apropostouch++
+    if(change != 0)
+    {if(apropostouch == 1)
+    {
+        continu.style.display = "grid"
+    }
+    if(apropostouch == 2)
+    {
+        continu.style.display = ""
+        apropostouch = 0
+    }}
 })

@@ -51,7 +51,7 @@
         height: 7vmax;
         width: 10vmax;
         bottom: 0;
-        top: 100vh;
+        top: 97.5vh;
         grid-template-columns: 10vmax 10vmax 10vmax;
     }
 }
@@ -60,7 +60,7 @@
 
 @media screen and /*(max-width : 1100px) and*/(orientation: portrait)
 {
-        article.cv
+    article.cv
     {
         display: grid;
         grid-template-columns: repeat(2, 45vw);
@@ -130,12 +130,12 @@
     div#Apropos.fantasy::before
     {
         /* background-color: red; */
-        top: 54.5vh;
+        top: 52vh;
         left: 3vw;
         position: absolute;
         display: block;
     }
-        div#maitrises.fantasy div#logo_container
+    div#maitrises.fantasy div#logo_container
     {
         position: absolute;
         width: 40vw;
@@ -151,8 +151,18 @@
         left: 2.5vw;
         top: 2.5vh;
     }
+    div#proposcontinu.fantasy
+    {
+        width : 40vw;
+        height : 15vh;
+        top : -16vh;
+        left: 2.5vw;
+    }
+    .toggled
+    {
+        background-position: 1vw 0.3vh;
+    }
 }
-
 
 
 /* P/ Menu */
