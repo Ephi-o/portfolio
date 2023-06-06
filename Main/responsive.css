@@ -102,6 +102,10 @@
         left: 15vmin;
         top: 2.5vmin;
     }
+    div#photo.fantasy
+    {
+        background-size: 100% 10%;
+    }
     div#speech_bubble::before
     {
         left: -5vmin;
