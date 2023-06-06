@@ -42,7 +42,13 @@ function docOn()
     {
         aide.style.opacity = "1"
         help.style.opacity = "1"
+        console.log("TEST")
         if(langue === "fr-FR")
+        {
+            help.style.lineHeight = ""
+            help.innerHTML = "Utilisez votre souris, ou les flèches directionnelles."
+        }
+        if(!langue)
         {
             help.style.lineHeight = ""
             help.innerHTML = "Utilisez votre souris, ou les flèches directionnelles."
@@ -52,7 +58,7 @@ function docOn()
             help.style.lineHeight = "250%"
             help.innerHTML = "Use your mouse or arrows"
         }
-    }, 4000)
+    }, 3000)
     btnOn.classList.remove("visible")
     btnOn.classList.add("invisible")
     setTimeout(()=>{

@@ -62,6 +62,7 @@
         grid-template-columns: repeat(2, 45vw);
         grid-template-rows: 15vh 15vh 10vh 30vh;
         margin-left: 3.5vw;
+        /* margin-top: 7.5vh; */
         margin-top: 12.5vh;
         width: 95vw;
     }
