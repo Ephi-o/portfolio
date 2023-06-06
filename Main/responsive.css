@@ -162,6 +162,10 @@
         top : -16vh;
         left: 2.5vw;
     }
+    div#experiences
+    {
+        background-color: #131313;
+    }
 }
 
 
