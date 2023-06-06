@@ -156,7 +156,7 @@
 {
     article#side_menu
     {
-        left: 0; right: 0; top: -100vh;
+        left: 0; right: 0; top: -95vh;
         rotate: 90deg;
         scale: 2;
         box-sizing:border-box;
