@@ -43,12 +43,14 @@
     {
         font-size: 7vmax;
         width: 7vmax;
+        position: fixed;
     }
     #language
     {
         height: 7vmax;
         width: 10vmax;
         grid-template-columns: 10vmax 10vmax 10vmax;
+        position: fixed;
     }
 }
 
@@ -279,7 +281,7 @@
     {
         grid-template-columns: 90vw;
         grid-template-rows: repeat(3, 33vh);
-        top: 10dvh;
+        top: 15dvh;
         /* background-color: red; */
     }
     article#github #git1
