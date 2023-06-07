@@ -276,7 +276,7 @@
 {
     article#github
     {
-        grid-template-columns: 98vw;
+        grid-template-columns: 90vw;
         grid-template-rows: repeat(3, 33vh);
         top: 10dvh;
         /* background-color: red; */
