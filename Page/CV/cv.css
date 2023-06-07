@@ -9,6 +9,7 @@
 body
 {
     height: 110vh;
+    width: 100vw;
     overflow-x: hidden;
 }
 #speech_bubble, #shortcut_contact, #diplomes, #experiences, #Apropos, #infos
