@@ -3,6 +3,7 @@
 const reason = document.querySelector('#reason')
 const form = document.querySelector('#form')
 const raison = document.createElement("input")
+const send = document.querySelector('#send')
 raison.setAttribute("type", "text")
 raison.setAttribute("placeholder", "Raison...")
 const coordonnate = document.querySelector('#coordonnate')
