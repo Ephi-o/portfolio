@@ -44,7 +44,7 @@
         font-size: 7vmax;
         width: 7vmax;
         bottom: 0;
-        top: 89vh;
+        top: 88.75vh;
     }
     #language
     {
@@ -181,16 +181,20 @@
     }
     article#side_menu .fa-house
     {
-        top: 1.8vw;
+        top: 2vw;
+    }
+    article#side_menu .fa-git
+    {
+        top: -2vw;
     }
     article#side_menu div#projects_menu a i.fa-file-code
     {
         left: -3vw;
     }
-    #home_menu, #contact_menu, #projects_menu, #git_menu, #cv_menu
+    /* #home_menu, #contact_menu, #projects_menu, #git_menu, #cv_menu
     {
         left: -1vh;
-    }
+    } */
 }
 /* P// Contact*/
 
