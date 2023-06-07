@@ -6,6 +6,10 @@
 @import url(../../Main/responsive.css);
 
 /*P///  Généralisation ------------------------------------ */
+body
+{
+    height: 120vh;
+}
 #speech_bubble, #shortcut_contact, #diplomes, #experiences, #Apropos, #infos
 {
     font-family: Alegreya;

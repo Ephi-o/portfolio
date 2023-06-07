@@ -281,7 +281,7 @@
     {
         grid-template-columns: 90vw;
         grid-template-rows: repeat(3, 33vh);
-        top: 15dvh;
+        top: 20dvh;
         /* background-color: red; */
     }
     article#github #git1
