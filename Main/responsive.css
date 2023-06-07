@@ -45,6 +45,10 @@
         width: 7vmax;
         position: fixed;
     }
+    .french, .uk
+    {
+        left: 0;
+    }
     #language
     {
         height: 7vmax;
