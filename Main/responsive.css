@@ -44,14 +44,14 @@
         font-size: 7vmax;
         width: 7vmax;
         bottom: 0;
-        top: 90dvh;
+        top: 90vh;
     }
     #language
     {
         height: 7vmax;
         width: 10vmax;
         bottom: 0;
-        top: 91dvh;
+        top: 92vh;
         grid-template-columns: 10vmax 10vmax 10vmax;
     }
 }
