@@ -8,7 +8,8 @@
 /*P///  Généralisation ------------------------------------ */
 body
 {
-    height: 120vh;
+    height: 110vh;
+    overflow-x: hidden;
 }
 #speech_bubble, #shortcut_contact, #diplomes, #experiences, #Apropos, #infos
 {
