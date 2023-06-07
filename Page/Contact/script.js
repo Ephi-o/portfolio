@@ -13,9 +13,7 @@ const selection = document.querySelector('#selection')
 
 // P/ ------------------------------------ Ajout div pour raison/selection ------------------------------------
 
-if(reason.value == "other")
-{
-    form.appendChild(raison)
+        form.appendChild(raison)
         form.style.gridRowTemplate = "repeat(9, 5vh)"
         raison.style.gridRow = "5"
         raison.style.display = "block"
@@ -27,7 +25,6 @@ if(reason.value == "other")
             form.style.height = "65vh"
             canvas.height = "65vh"
         }
-}
 
 reason.addEventListener("change", ()=>
 {
@@ -73,7 +70,6 @@ selection.addEventListener("change", ()=>
 const name_ = document.querySelector('#name')
 const firstname = document.querySelector('#firstname')
 const mail = document.querySelector('#mail')
-const reasonactive = document.querySelector('.raisonactived')
 
 // P// ------------------------------------ Vérification régex ------------------------------------
 name_.addEventListener("change", verifname)
@@ -143,9 +139,9 @@ send.addEventListener("click", (e)=>
 {
     if(!message.value == '')
     {
-        var raison = reasonactive.value
+        var raisonvalue = raison.value
         var subject = message.value
-        window.open(`mailto:gueret-k@outlook.com?subject=${raison}&body=${subject}`)
+        window.open(`mailto:gueret-k@outlook.com?subject=${raisonvalue}&body=${subject}`)
     }
 })
 
