@@ -51,7 +51,7 @@
         height: 7vmax;
         width: 10vmax;
         bottom: 0;
-        top: 92vh;
+        top: 92.5vh;
         grid-template-columns: 10vmax 10vmax 10vmax;
     }
 }
@@ -169,7 +169,7 @@
 {
     article#side_menu
     {
-        left: 0; right: 0; top: -80vh;
+        left: 0; right: 0; top: -75vh;
         rotate: 90deg;
         scale: 1.5;
         box-sizing:border-box;
