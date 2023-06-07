@@ -118,6 +118,7 @@ if(page == "contact.html")
         reason.children[4].innerHTML = "Other reason..."
         message.setAttribute("placeholder", "Your message")
         send.innerHTML = "Send"
+        reasonactive.setAttribute("placeholder", "Reason")
     }
 }
 

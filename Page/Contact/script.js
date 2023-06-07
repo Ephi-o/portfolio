@@ -4,6 +4,7 @@ const reason = document.querySelector('#reason')
 const form = document.querySelector('#form')
 const raison = document.createElement("input")
 const send = document.querySelector('#send')
+const message = document.querySelector('#message')
 raison.setAttribute("type", "text")
 raison.setAttribute("placeholder", "Raison...")
 const coordonnate = document.querySelector('#coordonnate')
@@ -11,6 +12,22 @@ const selection = document.querySelector('#selection')
 
 
 // P/ ------------------------------------ Ajout div pour raison/selection ------------------------------------
+
+if(reason.value == "other")
+{
+    form.appendChild(raison)
+        form.style.gridRowTemplate = "repeat(9, 5vh)"
+        raison.style.gridRow = "5"
+        raison.style.display = "block"
+        raison.style.width = "43vw"
+        raison.style.height = "5vh"
+        raison.classList.add("raisonactived")
+        if(window.innerWidth < 1100)
+        {
+            form.style.height = "65vh"
+            canvas.height = "65vh"
+        }
+}
 reason.addEventListener("change", ()=>
 {
     if(reason.value == "other")
@@ -35,6 +52,11 @@ reason.addEventListener("change", ()=>
     }
 })
 
+if(selection.value == "nada")
+{
+    coordonnate.setAttribute("disabled", "disabled")
+}
+
 selection.addEventListener("change", ()=>
 {
     if(selection.value == "nada")
@@ -50,6 +72,7 @@ selection.addEventListener("change", ()=>
 const name_ = document.querySelector('#name')
 const firstname = document.querySelector('#firstname')
 const mail = document.querySelector('#mail')
+const reasonactive = document.querySelector('.raisonactived')
 
 // P// ------------------------------------ Vérification régex ------------------------------------
 name_.addEventListener("change", verifname)
@@ -61,9 +84,7 @@ coordonnate.addEventListener("change", verifCoordonnate)
 function verifname(e)
 {
     let value;
-    // value=/^[A-Za-z\-_]+$/
     value = /^[a-zA-ZÀ-ÿ '-]+$/
-    value.test(e.target.value)
     console.log(value.test(e.target.value))
     if(value.test(e.target.value))
         {
@@ -94,7 +115,6 @@ function verifMail(e)
 function verifCoordonnate()
 {
     let value
-    console.log(selection.value)
     switch(selection.value)
     {
         case "tel": value=/^(\+33|0)\d([\s\.\-]?\d{2}){4}$/
@@ -117,6 +137,16 @@ function verifCoordonnate()
         coordonnate.style.backgroundColor = "rgba(255, 0, 0, 1)"
     }
 }
+
+send.addEventListener("click", (e)=>
+{
+    if(!message.value == '')
+    {
+        var raison = reasonactive.value
+        var subject = message.value
+        window.open(`mailto:gueret-k@outlook.com?subject=${raison}&body=${subject}`)
+    }
+})
 
 //P/// ------------------------------------ Animation Canvas ------------------------------------
 
