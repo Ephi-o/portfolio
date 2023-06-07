@@ -43,15 +43,11 @@
     {
         font-size: 7vmax;
         width: 7vmax;
-        bottom: 0;
-        top: 88.5vh;
     }
     #language
     {
         height: 7vmax;
         width: 10vmax;
-        bottom: 0;
-        top: 92vh;
         grid-template-columns: 10vmax 10vmax 10vmax;
     }
 }
@@ -288,14 +284,14 @@
     }
     article#github #git2
     {
-        left : -4vw ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+        left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
         position: relative;
         width: 90vw;
         height: 33vh;
     }
     article#github #git3
     {
-        left : -4vw ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+        left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
         position: relative;
         width: 90vw;
         height: 33vh;
