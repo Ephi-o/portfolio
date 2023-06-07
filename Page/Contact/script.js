@@ -23,6 +23,11 @@ reason.addEventListener("change", ()=>
         raison.style.width = "43vw"
         raison.style.height = "5vh"
         raison.classList.add("raisonactived")
+        if(window.innerWidth < 1100)
+        {
+            form.style.height = "65vh"
+            canvas.height = "65vh"
+        }
     }
     if(reason.value != "other" && (raison.classList == "raisonactived"))
     {
