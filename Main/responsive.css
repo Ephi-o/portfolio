@@ -44,14 +44,14 @@
         font-size: 7vmax;
         width: 7vmax;
         bottom: 0;
-        top: 90vh;
+        top: 90dvh;
     }
     #language
     {
         height: 7vmax;
         width: 10vmax;
         bottom: 0;
-        top: 92.25vh;
+        top: 91dvh;
         grid-template-columns: 10vmax 10vmax 10vmax;
     }
 }
@@ -199,7 +199,7 @@
     div#contact
     {
         width: 100vw;
-        left : 0 ; top: -15vh ; right: 0 ; margin: auto;
+        left : 0 ; top: -20dvh ; right: 0 ; margin: auto;
         position: relative;
         display: grid;
         align-items: center;
@@ -216,7 +216,7 @@
     {
         width: 95vw;
         height: 60vh;
-        right : 0; top: -15vh ; bottom: 0 ; margin: auto;
+        right : 0; top: -20dvh ; bottom: 0 ; margin: auto;
         left: -1.25vw;
         position: relative;
         background-color: #131313a2;
