@@ -28,6 +28,7 @@ if(reason.value == "other")
             canvas.height = "65vh"
         }
 }
+
 reason.addEventListener("change", ()=>
 {
     if(reason.value == "other")
