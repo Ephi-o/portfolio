@@ -246,4 +246,67 @@
     }
 }
 
-/* P/// */
+/* P/// Projets */
+
+@media screen and /*(max-width : 1100px) and*/(orientation: portrait)
+{
+    article#projectshub
+    {
+        grid-template-columns: 90vw;
+        grid-template-rows: repeat(4, 25vh);
+        row-gap: 2.5vh;
+        top: 10vh;
+    }
+    article#projectshub span#desc
+    {
+        top: -100vh;
+    }
+    article#projectshub div:nth-of-type(n)
+    {
+        width : 90vw;
+        height : 25vh;
+    }
+    article#projectshub div:nth-of-type(n) h2
+    {
+        font-size: 4vmin;
+        top: -.5vh;
+        position: relative;
+    }
+}
+
+/* P/ GIT */
+
+@media screen and /*(max-width : 1100px) and*/(orientation: portrait)
+{
+    article#github
+    {
+        grid-template-columns: 98vw;
+        grid-template-rows: repeat(3, 33vh);
+        top: 10vh;
+        /* background-color: red; */
+    }
+    article#github #git1
+    {
+        left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+        position: relative;
+    }
+    article#github #git2
+    {
+        left : -4vw ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+        position: relative;
+        width: 90vw;
+        height: 33vh;
+    }
+    article#github #git3
+    {
+        left : -4vw ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+        position: relative;
+        width: 90vw;
+        height: 33vh;
+    }
+    article#github #git3 h1
+    {
+        top: 2vh;
+        position: relative;
+    }
+}
