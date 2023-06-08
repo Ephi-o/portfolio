@@ -260,7 +260,7 @@
         grid-template-columns: 90vw;
         grid-template-rows: repeat(4, 25vh);
         row-gap: 2.5vh;
-        top: 10dvh;
+        top: 20dvh;
     }
     article#projectshub span#desc
     {
