@@ -44,6 +44,7 @@
         font-size: 7vmax;
         width: 7vmax;
         position: fixed;
+        bottom: 0dvh;
     }
     .french, .uk
     {
@@ -55,6 +56,7 @@
         width: 10vmax;
         grid-template-columns: 10vmax 10vmax 10vmax;
         position: fixed;
+        bottom: 0dvh;
     }
 }
 
