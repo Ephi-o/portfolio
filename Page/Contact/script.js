@@ -3,6 +3,8 @@
 const reason = document.querySelector('#reason')
 const form = document.querySelector('#form')
 const raison = document.createElement("input")
+const send = document.querySelector('#send')
+const message = document.querySelector('#message')
 raison.setAttribute("type", "text")
 raison.setAttribute("placeholder", "Raison...")
 const coordonnate = document.querySelector('#coordonnate')
@@ -10,6 +12,20 @@ const selection = document.querySelector('#selection')
 
 
 // P/ ------------------------------------ Ajout div pour raison/selection ------------------------------------
+
+        form.appendChild(raison)
+        form.style.gridRowTemplate = "repeat(9, 5vh)"
+        raison.style.gridRow = "5"
+        raison.style.display = "block"
+        raison.style.width = "43vw"
+        raison.style.height = "5vh"
+        raison.classList.add("raisonactived")
+        if(window.innerWidth < 1100)
+        {
+            form.style.height = "65vh"
+            canvas.height = "65vh"
+        }
+
 reason.addEventListener("change", ()=>
 {
     if(reason.value == "other")
@@ -22,12 +38,22 @@ reason.addEventListener("change", ()=>
         raison.style.width = "43vw"
         raison.style.height = "5vh"
         raison.classList.add("raisonactived")
+        if(window.innerWidth < 1100)
+        {
+            form.style.height = "65vh"
+            canvas.height = "65vh"
+        }
     }
     if(reason.value != "other" && (raison.classList == "raisonactived"))
     {
         form.removeChild(raison)
     }
 })
+
+if(selection.value == "nada")
+{
+    coordonnate.setAttribute("disabled", "disabled")
+}
 
 selection.addEventListener("change", ()=>
 {
@@ -55,9 +81,7 @@ coordonnate.addEventListener("change", verifCoordonnate)
 function verifname(e)
 {
     let value;
-    // value=/^[A-Za-z\-_]+$/
     value = /^[a-zA-ZÀ-ÿ '-]+$/
-    value.test(e.target.value)
     console.log(value.test(e.target.value))
     if(value.test(e.target.value))
         {
@@ -88,7 +112,6 @@ function verifMail(e)
 function verifCoordonnate()
 {
     let value
-    console.log(selection.value)
     switch(selection.value)
     {
         case "tel": value=/^(\+33|0)\d([\s\.\-]?\d{2}){4}$/
@@ -111,6 +134,16 @@ function verifCoordonnate()
         coordonnate.style.backgroundColor = "rgba(255, 0, 0, 1)"
     }
 }
+
+send.addEventListener("click", (e)=>
+{
+    if(!message.value == '')
+    {
+        var raisonvalue = raison.value
+        var subject = message.value
+        window.open(`mailto:gueret-k@outlook.com?subject=${raisonvalue}&body=${subject}`)
+    }
+})
 
 //P/// ------------------------------------ Animation Canvas ------------------------------------
 

@@ -11,13 +11,15 @@
     <script src="../../RessourcesImport/menu/menu.js" defer></script>
     <script src="../../Main/lang.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="152x152" href="../..RessourcesImport/favico/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../..RessourcesImport/favico//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../..RessourcesImport/favico//favicon-16x16.png">
-    <link rel="manifest" href="../..RessourcesImport/favico//site.webmanifest">
-    <link rel="mask-icon" href="../..RessourcesImport/favico//safari-pinned-tab.svg" color="#353430">
+    
+    <link rel="apple-touch-icon" sizes="152x152" href="../../RessourcesImport/favico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../RessourcesImport/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../RessourcesImport/favico/favicon-16x16.png">
+    <link rel="manifest" href="../../RessourcesImport/favico/site.webmanifest">
+    <link rel="mask-icon" href="../../RessourcesImport/favico/safari-pinned-tab.svg" color="#353430">
     <meta name="msapplication-TileColor" content="#353430">
     <meta name="theme-color" content="#353430">
+    
 </head>
 <body>   
 
@@ -26,7 +28,7 @@
         <div id="bulle1"><span id="button"><i class="awesome fa-solid fa-bars" style="color: #c0c0c0;"></i></span></div>
         <div id="home_menu" class="menu_selected"><a href="../../index.html"><i class="fa-solid fa-house" style="color: #000000;"></i></a></div>
         <div id="cv_menu" class="menu_selected"><a href="../CV/cv.html"><i class="fa-solid fa-file-contract" style="color: #000000;"></i></a></div>
-        <div id="contact_menu" class="menu_selected"><a href="../Contact/contact.html"><i class="fa-solid fa-address-book" style="color: #000000;"></i></a></div>
+        <div id="contact_menu" class="menu_selected"><a href="../Contact/contact.html"><i class="fa-solid fa-id-badge" style="color: #000000;"></i></a></div>
         <div id="projects_menu" class="menu_selected"><a href="../Projet/projet.html"><i class="fa-solid fa-file-code" style="color: #000000;"></i></a></div>
         <div id="git_menu" class="menu_selected"><a href="../Github/git.html"><i class="fa-brands fa-github" style="color: #000000;"></i></a></div>
     </article>
@@ -53,21 +55,21 @@
                 <input type="text" name="" id="name" placeholder="Nom" required>
                 <input type="text" name="" id="firstname" placeholder="Prénom" required>
                 <input type="email" name="" id="mail" placeholder="johndoe@mail.fake" required>
-                <select id="selection" required>
-                    <option value="nada" selected disabled>Autre type de coordonnées</option>
+                <select id="selection" required disabled>
+                    <option value="nada">Autre type de coordonnées</option>
                     <option value="tel">Téléphone</option>
                     <option value="linkedin">Linkedin</option>
                     <option value="discord">Discord</option>
                     <option value="other">Autre...</option>
-                    <option value="nada">Rien</option>
+                    <option value="nada" selected>Rien</option>
                 </select>
-                <input type="text" name="" id="coordonnate" placeholder="Coordonnées" required>
+                <input type="text" name="" id="coordonnate" placeholder="Coordonnées" disabled>
                 <select name="" id="reason" required>
-                    <option value="" selected disabled>Raison du contact...</option>
-                    <option value="">Demande d'information</option>
-                    <option value="">Besoin d'aide</option>
-                    <option value="">Proposition emploi</option>
-                    <option value="other">Autre...</option>
+                    <option value="" disabled>Raison du contact...</option>
+                    <option value="" disabled>Demande d'information</option>
+                    <option value="" disabled>Besoin d'aide</option>
+                    <option value="" disabled>Proposition emploi</option>
+                    <option value="other" selected>Autre...</option>
                 </select>
                 <textarea name="content" id="message" cols="30" rows="5" placeholder="Votre message..." required></textarea>
             <!-- <input type="submit" value="" name="send" id="send"> -->

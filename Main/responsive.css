@@ -43,16 +43,20 @@
     {
         font-size: 7vmax;
         width: 7vmax;
-        bottom: 0;
-        top: 95vh;
+        position: fixed;
+        bottom: 0dvh;
+    }
+    .french, .uk
+    {
+        left: 0;
     }
     #language
     {
         height: 7vmax;
         width: 10vmax;
-        bottom: 0;
-        top: 97.5vh;
         grid-template-columns: 10vmax 10vmax 10vmax;
+        position: fixed;
+        bottom: 0dvh;
     }
 }
 
@@ -169,7 +173,7 @@
 {
     article#side_menu
     {
-        left: 0; right: 0; top: -75vh;
+        left: 0; right: 0; top: -100dvh;
         rotate: 90deg;
         scale: 1.5;
         box-sizing:border-box;
@@ -181,16 +185,16 @@
     }
     article#side_menu .fa-house
     {
-        top: 1.8vw;
+        top: 2vw;
     }
-    article#side_menu div#projects_menu a i.fa-file-code
+    article#side_menu .fa-git
     {
-        left: -3vw;
-    }
-    #home_menu, #contact_menu, #projects_menu, #git_menu, #cv_menu
+        top: -2vw;
+    }    
+    /* #home_menu, #contact_menu, #projects_menu, #git_menu, #cv_menu
     {
         left: -1vh;
-    }
+    } */
 }
 /* P// Contact*/
 
@@ -199,13 +203,14 @@
     div#contact
     {
         width: 100vw;
-        left : 0 ; top: -25vh ; right: 0 ; margin: auto;
+        left : 0 ; top: -20dvh ; right: 0 ; margin: auto;
         position: relative;
         display: grid;
         align-items: center;
         text-align: center;
         grid-template-columns: repeat(4, 25vw);
         grid-template-rows: 20vh;
+        padding-left: 0;
     }
     div#contact i
     {
@@ -213,27 +218,100 @@
     }
     div#form
     {
-        width: 100vw;
+        width: 95vw;
         height: 60vh;
-        right : 0; top: -25vh ; bottom: 0 ; margin: auto;
+        right : 0; top: -20dvh ; bottom: 0 ; margin: auto;
+        left: -1.25vw;
         position: relative;
         background-color: #131313a2;
         display: grid;
         padding-left: 3.25vw;
         padding-top: 2.5vh;
-        grid-template-columns: repeat(4, 22.5vw);
+        grid-template-columns: repeat(4, 21.5vw);
         grid-template-rows: repeat(8, 5vh);
         row-gap: 2.5vh;
         column-gap: 1.25vw;
+        box-shadow: 0px 0px 5px black;
     }
     button#send
     {
         width: 25vw;
+        left: -3vw;
+        top: -5vh;
+        height: 5vh;
     }
     select#selection
     {
-        width: 22.5vw;
+        width: 21.5vw;
+    }
+    canvas#canvas-form
+    {
+        width: 95vw;
+        height: 65vh;
     }
 }
 
-/* P/// */
+/* P/// Projets */
+
+@media screen and /*(max-width : 1100px) and*/(orientation: portrait)
+{
+    article#projectshub
+    {
+        grid-template-columns: 90vw;
+        grid-template-rows: repeat(4, 25vh);
+        row-gap: 2.5vh;
+        top: 40vh;
+    }
+    article#projectshub span#desc
+    {
+        top: -100vh;
+    }
+    article#projectshub div:nth-of-type(n)
+    {
+        width : 90vw;
+        height : 25vh;
+    }
+    article#projectshub div:nth-of-type(n) h2
+    {
+        font-size: 4vmin;
+        top: -.5vh;
+        position: relative;
+    }
+}
+
+/* P/ GIT */
+
+@media screen and /*(max-width : 1100px) and*/(orientation: portrait)
+{
+    article#github
+    {
+        grid-template-columns: 90vw;
+        grid-template-rows: repeat(3, 33vh);
+        top: 20dvh;
+        /* background-color: red; */
+    }
+    article#github #git1
+    {
+        left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+        position: relative;
+    }
+    article#github #git2
+    {
+        left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+        position: relative;
+        width: 90vw;
+        height: 33vh;
+    }
+    article#github #git3
+    {
+        left : 0 ; top: 0 ; bottom: 0 ; right: 0 ; margin: auto;
+        position: relative;
+        width: 90vw;
+        height: 33vh;
+    }
+    article#github #git3 h1
+    {
+        top: 2vh;
+        position: relative;
+    }
+}

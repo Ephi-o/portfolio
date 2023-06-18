@@ -18,7 +18,7 @@ body
 {
     background-color: #2b2a33;
     cursor: url(https://cur.cursors-4u.net/games/gam-4/gam372.cur), default;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 a{
     color:black;
