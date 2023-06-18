@@ -234,7 +234,7 @@ sword.addEventListener("click", ()=>
     {
         transition1.style.display = ""
         transition2.style.display = ""
-    }, 3000)
+    }, 000)
 })
     
 photo.addEventListener("click", ()=>
