@@ -132,9 +132,9 @@ input
 #photo
 {
     width: auto;
-    background: url(../../RessourcesImport/Images/artworks-000420504324-qbn3os-t500x500.jpg);
+    background: url(../../images/144479330_4109381992428708_2752974402439397130_n.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     box-shadow: 5px 5px 10px black, inset 5px 5px 10px rgba(0, 0, 0, 0.5);
     background-position: center;
     /* background-position: -150px 0px; */
@@ -292,7 +292,7 @@ input
 }
 #transition1, #transition2
 {
-    height: 200vh;
+    height: 250vh;
     width : 50vw;
     display: none;
     background-color: black;
