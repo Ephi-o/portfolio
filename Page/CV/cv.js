@@ -247,8 +247,10 @@ photo.addEventListener("click", ()=>
         setTimeout(()=>
         {
             photo.style.opacity = "1"
-            photo.style.background = "repeating-linear-gradient(0deg, rgba(60, 165, 103, 0.6) 0%, rgba(46, 139, 103, 0.6) 5%, rgba(46, 139, 103, 0.6) 10%, rgba(60, 165, 103, 0.6) 15%), url(../../RessourcesImport/Images/artworks-000420504324-qbn3os-t500x500.jpg)"
-            photo.style.backgroundPosition = "-150px 20px"
+            photo.style.background = "repeating-linear-gradient(0deg, rgba(60, 165, 103, 0.6) 0%, rgba(46, 139, 103, 0.6) 5%, rgba(46, 139, 103, 0.6) 10%, rgba(60, 165, 103, 0.6) 15%), url(../../images/144479330_4109381992428708_2752974402439397130_n.jpg)"
+            photo.style.backgroundRepeat = "no-repeat";
+            photo.style.backgroundPosition = "center";        
+            photo.style.backgroundSize = "100%"
         }, 1000)
         audio.play()   
         }
