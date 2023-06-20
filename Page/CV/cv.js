@@ -209,7 +209,6 @@ sword.addEventListener("click", ()=>
             document.body.style.backgroundSize = "0%"
             continu.style.display = "none"
             apropos.innerHTML = ""
-            experiences.style.backgroundColor = "#131313";
             sword.style.rotate = ''
             apropos.innerHTML = "<li>Guéret Killian</li>"
             apropos.innerHTML += "<p>Développeur Web et Web mobile Junior, à la recherche d'un stage, retrouvez mes maîtrises à ma droite et si vous avez des questions, retrouvez moi dans #Contact.</p>"
