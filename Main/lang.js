@@ -89,8 +89,8 @@ if(page == "cv.html")
     {
         diplomes.children[0].innerHTML = "Professionnal Title - Web Developer - 2023"
         diplomes.children[1].innerHTML = "<em>Baccalauréat général</em> - Sciences - 2020"
-        experiences.children[0].innerHTML = "Stage at X"
-        apropos.children[1].innerHTML = "Young Web developer, searching for a stage. Find wich languages I know and master on the right, and don't hesitate to contact me."
+        experiences.children[0].innerHTML = "Searching for an Internship"
+        apropos.children[1].innerHTML = "Young Web developer, searching for an internship. Find wich languages I know and master on the right, and don't hesitate to contact me."
         speech_bubble.children[0].innerHTML = "Another view ?"
         continu.children[0].innerHTML = "Literature <li>Lovecraft</li> <li>Andrzej Sapkowski</li> <li>Michael Moorcock</li>"
         continu.children[1].innerHTML = "Sport <li>Running</li> <li>Taekwondo</li> <li>Musculation</li>"
